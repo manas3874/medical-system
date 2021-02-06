@@ -1,28 +1,17 @@
-.login {
-  height: 90vh;
+.signup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.login__header {
-  font-size: 5rem;
-  color: #575757;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
-}
-
-.login > form {
+.signup > form {
   border: 10px solid #57cecece;
   width: 40%;
   margin: auto;
@@ -39,12 +28,18 @@
           align-items: center;
 }
 
-.login > form .form-group input {
+.signup > form .form-group input,
+.signup > form .form-group select {
+  width: 100%;
   height: 4.4rem;
   font-size: 2rem !important;
 }
 
-.login > form button {
+.signup > form .form-group textarea {
+  width: 100%;
+}
+
+.signup > form button {
   cursor: pointer;
   color: #fff;
   font-size: 2rem;
@@ -56,16 +51,4 @@
   outline: none;
   border-radius: 10rem;
 }
-
-.login__signup {
-  margin-top: 3rem;
-}
-
-.login__signup span {
-  cursor: pointer;
-}
-
-.login__signup span a {
-  color: #57cecece !important;
-}
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=signup.css.map */

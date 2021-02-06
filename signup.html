@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="base-reset.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="stylesheet" href="./styles/signup.css" />
     <title>medical system | Home</title>
   </head>
   <body>
@@ -34,35 +35,54 @@
       <h1 class="navbar-login__logo">Appointment +</h1>
     </nav>
 
-    <div class="login">
-      <h1 class="login__header">Login</h1>
+    <div class="signup">
+      <h1 class="login__header">Sign up</h1>
       <form>
         <div class="form-group">
+          <input type="text" class="form-control" placeholder="Name" />
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of birth</label>
           <input
-            type="email"
+            type="date"
+            name="dob"
             class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Email address"
+            placeholder="date-of-birth"
           />
-          <small id="emailHelp" class="form-text text-muted"
-            >We'll never share your email with anyone else.</small
-          >
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+          <input type="number" class="form-control" placeholder="postcode" />
+        </div>
+        <div class="form-group">
+          <input type="tel" class="form-control" placeholder="Phone number" />
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="email" />
+        </div>
+        <div class="form-group">
+          <select name="gender" class="form-control" id="">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="number" class="form-control" placeholder="NHS number" />
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="password" />
         </div>
         <div class="form-group">
           <input
             type="password"
             class="form-control"
-            id="exampleInputPassword1"
-            placeholder="Password"
-          /><small class="form-text text-muted">Forgot Passoword?</small>
+            placeholder="verify password"
+          />
         </div>
 
         <button>Submit</button>
-        <h3 class="login__signup">
-          Patients can register,
-          <span><a href="/signup.html">Sign up</a></span>
-        </h3>
       </form>
     </div>
 
