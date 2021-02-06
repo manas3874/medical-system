@@ -1,3 +1,75 @@
-*{
-    
+.appointment-wrapper {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.appointment {
+  height: 100%;
+
+  &__header {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #575757;
+    width: 60%;
+    margin: auto;
+    padding: 2rem 0;
+    &--header {
+      color: #fff;
+      font-size: 3rem;
+    }
+    form {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: space-evenly;
+      label {
+        margin: 1rem 0;
+        width: 100%;
+        font-size: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #57cecece;
+        input,
+        select {
+          width: 35rem;
+          height: 3.5rem;
+          font-size: 2rem;
+          cursor: pointer;
+        }
+      }
+    }
+    button {
+      cursor: pointer;
+      color: #fff;
+      font-size: 2rem;
+      margin-top: 1rem;
+      background-color: #57cecece;
+      padding: 1rem 3rem;
+      margin: 1rem 0;
+      border: none;
+      outline: none;
+      border-radius: 10rem;
+    }
+    .carousel.slide {
+      width: 100%;
+
+      .carousel-item,
+      .active {
+        display: flex;
+        img {
+          margin: auto;
+          width: 10rem;
+          border-radius: 20rem;
+        }
+      }
+    }
+  }
 }

@@ -1,1 +1,120 @@
-/* No CSS *//*# sourceMappingURL=appointment.css.map */
+.appointment-wrapper {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.appointment {
+  height: 100%;
+}
+
+.appointment__header {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.appointment__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #575757;
+  width: 60%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.appointment__card--header {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.appointment__card form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.appointment__card form label {
+  margin: 1rem 0;
+  width: 100%;
+  font-size: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #57cecece;
+}
+
+.appointment__card form label input,
+.appointment__card form label select {
+  width: 35rem;
+  height: 3.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.appointment__card button {
+  cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 1rem;
+  background-color: #57cecece;
+  padding: 1rem 3rem;
+  margin: 1rem 0;
+  border: none;
+  outline: none;
+  border-radius: 10rem;
+}
+
+.appointment__card .carousel.slide {
+  width: 100%;
+}
+
+.appointment__card .carousel.slide .carousel-item,
+.appointment__card .carousel.slide .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.appointment__card .carousel.slide .carousel-item img,
+.appointment__card .carousel.slide .active img {
+  margin: auto;
+  width: 10rem;
+  border-radius: 20rem;
+}
+/*# sourceMappingURL=appointment.css.map */
