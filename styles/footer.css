@@ -48,9 +48,12 @@
           flex-direction: column;
 }
 
+.footer__nav-left--list * {
+  color: #fff !important;
+}
+
 .footer__nav-left--list-item {
   margin: 0.5rem 0;
-  color: #fff;
   cursor: pointer;
 }
 

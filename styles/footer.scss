@@ -25,9 +25,11 @@
       list-style: none;
       display: flex;
       flex-direction: column;
+      * {
+        color: #fff !important;
+      }
       &-item {
         margin: 0.5rem 0;
-        color: #fff;
         cursor: pointer;
       }
     }
