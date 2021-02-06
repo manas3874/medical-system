@@ -13,6 +13,7 @@
       justify-content: space-between;
       &--item {
         font-size: 2rem;
+        cursor: pointer;
         &-active {
           font-size: 2rem;
           border-bottom: 1px solid black;
@@ -53,6 +54,7 @@
         width: 25rem;
         height: 4.5rem;
         font-size: 2rem;
+        cursor: pointer;
       }
     }
   }
@@ -68,6 +70,7 @@
     justify-content: space-evenly;
     padding: 8rem 0;
     .homepage-cards__card {
+      cursor: pointer;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -101,8 +104,66 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 3rem 4rem;
+  padding: 5rem 7rem;
+  background: #57cecece;
+  width: 100%;
   > h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 5rem;
+  }
+  > div {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+    * {
+      font-size: 2rem;
+    }
+  }
+  &__nav-left {
+    &--list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      &-item {
+        margin: 0.5rem 0;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+  &__nav-center {
+    &--list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      &-item {
+        cursor: pointer;
+        color: #fff;
+        background-color: #046161;
+        padding: 1rem 3rem;
+        margin: 1rem 0;
+        border-radius: 10rem;
+      }
+    }
+  }
+  &__nav-right {
+    display: flex;
+    flex-direction: column;
+    &--header {
+      font-size: 2.5rem !important;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      > * {
+        margin: 1.5rem 0;
+      }
+      button {
+        cursor: pointer;
+      }
+    }
   }
 }

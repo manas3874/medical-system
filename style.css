@@ -22,6 +22,7 @@
 
 .navbar-right__list--item {
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .navbar-right__list--item-active {
@@ -78,6 +79,7 @@
   width: 25rem;
   height: 4.5rem;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .homepage-cards {
@@ -99,6 +101,7 @@
 }
 
 .homepage-cards div .homepage-cards__card {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,10 +151,103 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 3rem 4rem;
+  padding: 5rem 7rem;
+  background: #57cecece;
+  width: 100%;
 }
 
 .footer > h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+
+.footer > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer > div * {
+  font-size: 2rem;
+}
+
+.footer__nav-left--list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__nav-left--list-item {
+  margin: 0.5rem 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer__nav-center--list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__nav-center--list-item {
+  cursor: pointer;
+  color: #fff;
+  background-color: #046161;
+  padding: 1rem 3rem;
+  margin: 1rem 0;
+  border-radius: 10rem;
+}
+
+.footer__nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__nav-right--header {
+  font-size: 2.5rem !important;
+}
+
+.footer__nav-right form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__nav-right form > * {
+  margin: 1.5rem 0;
+}
+
+.footer__nav-right form button {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
