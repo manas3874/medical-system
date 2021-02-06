@@ -4,16 +4,146 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!-- ! Bootstrap css import -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- ! font import -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="base-reset.css" />
+    <title>medical system</title>
   </head>
   <body>
-    <h1>
-      Hello there Mr. Asim, the project will be updated here frequently. You can
-      track the progress here at your ease.
-    </h1>
-    <h2>
-      You may need to hard-reload (ctrl+f5 / command+f5) this website each time
-      to avoid loading from the cache.
-    </h2>
+    <!-- ! Navbar -->
+    <nav class="navbar">
+      <div class="navbar-left">
+        <h2 class="navbar-left__logo">Appointment +</h2>
+      </div>
+      <div class="navbar-right">
+        <ul class="navbar-right__list">
+          <li class="navbar-right__list--item">Home</li>
+          <li class="navbar-right__list--item">About</li>
+          <li class="navbar-right__list--item">Contact us</li>
+          <li class="navbar-right__list--item">Book an appointment</li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ! Banner -->
+    <section class="homepage-banner">
+      <h2 class="homepage-banner__header">
+        The one stop Doctor booking system
+      </h2>
+      <form class="homepage-banner__form">
+        <label for="doctor">
+          Select a Doctor
+          <select name="doctor">
+            <option value="Dr. Ahmed">Dr. Ahmed</option>
+            <option value="Dr. Asim">Dr. Asim</option>
+          </select>
+        </label>
+        <label for="day"
+          >Select a Day
+          <input type="date" name="day" />
+        </label>
+        <label for="time"
+          >Select a Time <input type="time" name="time"
+        /></label>
+      </form>
+    </section>
+    <!-- ! Cards -->
+    <section class="homepage-cards">
+      <div>
+        <div class="homepage-cards__card">
+          <h3 class="homepage-cards__card--top">Book an</h3>
+          <img
+            src="./assets/checkbox.png"
+            alt=""
+            class="homepage-cards__card--img"
+          />
+          <h3 class="homepage-cards__card--bottom">Appointment</h3>
+        </div>
+        <div class="homepage-cards__card">
+          <h3 class="homepage-cards__card--top">View your</h3>
+          <img
+            src="./assets/book-pen.png"
+            alt=""
+            class="homepage-cards__card--img"
+          />
+          <h3 class="homepage-cards__card--bottom">Notes</h3>
+        </div>
+        <div class="homepage-cards__card">
+          <h3 class="homepage-cards__card--top">Rearrange</h3>
+          <img
+            src="./assets/rearrange.png"
+            alt=""
+            class="homepage-cards__card--img"
+          />
+          <h3 class="homepage-cards__card--bottom">Appointments</h3>
+        </div>
+        <div class="homepage-cards__card">
+          <h3 class="homepage-cards__card--top">Add notes</h3>
+          <img
+            src="./assets/notes.png"
+            alt=""
+            class="homepage-cards__card--img"
+          />
+          <h3 class="homepage-cards__card--bottom">to programs</h3>
+        </div>
+      </div>
+      <h2 class="homepage-cards__bottom-header">There is so much more</h2>
+    </section>
+    <!-- ! Footer -->
+
+    <footer class="footer">
+      <h1>Appointment +</h1>
+      <div class="footer__nav-left">
+        <ul class="footer__nav-left--list">
+          <li class="footer__nav-left--list-item">Home</li>
+          <li class="footer__nav-left--list-item">About Us</li>
+          <li class="footer__nav-left--list-item">Contact us</li>
+          <li class="footer__nav-left--list-item">FAQ</li>
+          <li class="footer__nav-left--list-item">Login</li>
+        </ul>
+      </div>
+      <div class="footer__nav-center">
+        <ul class="footer__nav-center--list">
+          <li class="footer__nav-center--list-item">Doctor login</li>
+          <li class="footer__nav-center--list-item">Nurses login</li>
+          <li class="footer__nav-center--list-item">Admin login</li>
+        </ul>
+      </div>
+      <div class="footer__nav-right">
+        <h3 class="footer__nav-right--header">Sign up for our newsletter</h3>
+        <form>
+          <input type="email" name="email" placeholder="Email address" />
+          <input type="text" name="fullname" placeholder="Name" />
+          <button>Save</button>
+        </form>
+      </div>
+    </footer>
+    <!-- ! bootstrap js import-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
