@@ -1,0 +1,106 @@
+.dashboard-navbar {
+  height: 10vh;
+  background-color: #57cecece;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard-navbar * {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.dashboard-navbar__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+}
+
+.dashboard-navbar__left .dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dashboard-navbar__left .dropdown-menu * {
+  color: black;
+}
+
+.dashboard-navbar__left .dropdown button {
+  background-color: transparent !important;
+  border: none;
+}
+
+.dashboard-navbar__left .dropdown button:hover {
+  background: none;
+  color: black;
+}
+
+.dashboard-navbar__right a {
+  padding: 1rem 3rem;
+  border: 2px solid #229e9e;
+}
+
+.dashboard-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 90vh;
+}
+
+.dashboard-content .upcoming {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
+}
+
+.dashboard-content .upcoming .columns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.dashboard-content .upcoming .columns h1,
+.dashboard-content .upcoming .columns h2 {
+  height: 4.5rem;
+}
+/*# sourceMappingURL=dashboard.css.map */
