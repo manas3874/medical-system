@@ -30,4 +30,9 @@
   font-size: 2rem;
   border-bottom: 1px solid black;
 }
+
+.navbar-login__logo {
+  font-size: 4rem;
+  text-align: center;
+}
 /*# sourceMappingURL=navbar.css.map */
