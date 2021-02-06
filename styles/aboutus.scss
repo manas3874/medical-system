@@ -1,0 +1,46 @@
+.aboutus-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #57cecece;
+  height: 90vh;
+  &__header {
+    font-size: 5rem;
+    color: #fff;
+    padding: 4rem 0;
+  }
+  &__img {
+    width: 30rem;
+    border-radius: 100rem;
+    border: 15px solid #9ffcfc;
+  }
+  &__bottom {
+    margin-top: 5rem;
+    font-size: 3rem;
+  }
+  &__icon {
+    width: 5rem;
+  }
+}
+
+.aboutus-vision {
+  background: url("../assets/aboutus-vision.jpg") center center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  &__list {
+    padding-left: 25rem;
+    h1 {
+      font-size: 4rem;
+      color: cadetblue;
+      margin-bottom: 3rem;
+    }
+    &--item {
+      list-style: none;
+      padding-left: 3rem;
+      font-size: 3rem;
+    }
+  }
+}

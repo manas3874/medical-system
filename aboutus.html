@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="base-reset.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
-    <link rel="stylesheet" href="./styles/homepage.css" />
+    <link rel="stylesheet" href="./styles/aboutus.css" />
     <title>medical system</title>
   </head>
   <body>
@@ -37,83 +37,37 @@
       </div>
       <div class="navbar-right">
         <ul class="navbar-right__list">
-          <li class="navbar-right__list--item-active">
-            <a href="/index.html">Home</a>
-          </li>
-          <li class="navbar-right__list--item">
-            <a href="/aboutus.html">About us</a>
-          </li>
+          <li class="navbar-right__list--item">Home</li>
+          <li class="navbar-right__list--item-active">About</li>
           <li class="navbar-right__list--item">Contact us</li>
           <li class="navbar-right__list--item">Book an appointment</li>
         </ul>
       </div>
     </nav>
-    <!-- ! Banner -->
-    <section class="homepage-banner">
-      <h2 class="homepage-banner__header">
-        The one stop Doctor booking system
-      </h2>
-      <form class="homepage-banner__form">
-        <label for="doctor">
-          Select a Doctor
-          <select name="doctor">
-            <option value="Dr. Ahmed">Dr. Ahmed</option>
-            <option value="Dr. Asim">Dr. Asim</option>
-          </select>
-        </label>
-        <label for="day"
-          >Select a Day
-          <input type="date" name="day" />
-        </label>
-        <label for="time"
-          >Select a Time <input type="time" name="time"
-        /></label>
-      </form>
+
+    <!-- ! About us banner -->
+    <section class="aboutus-banner">
+      <h1 class="aboutus-banner__header">About us</h1>
+      <img src="./assets/ceo.jpg" alt="" class="aboutus-banner__img" />
+      <h3 class="aboutus-banner__bottom">View more</h3>
+      <img src="./assets/down-arrow.png" alt="" class="aboutus-banner__icon" />
     </section>
-    <!-- ! Cards -->
-    <section class="homepage-cards">
-      <div>
-        <div class="homepage-cards__card">
-          <h3 class="homepage-cards__card--top">Book an</h3>
-          <img
-            src="./assets/checkbox.png"
-            alt=""
-            class="homepage-cards__card--img"
-          />
-          <h3 class="homepage-cards__card--bottom">Appointment</h3>
-        </div>
-        <div class="homepage-cards__card">
-          <h3 class="homepage-cards__card--top">View your</h3>
-          <img
-            src="./assets/book-pen.png"
-            alt=""
-            class="homepage-cards__card--img"
-          />
-          <h3 class="homepage-cards__card--bottom">Notes</h3>
-        </div>
-        <div class="homepage-cards__card">
-          <h3 class="homepage-cards__card--top">Rearrange</h3>
-          <img
-            src="./assets/rearrange.png"
-            alt=""
-            class="homepage-cards__card--img"
-          />
-          <h3 class="homepage-cards__card--bottom">Appointments</h3>
-        </div>
-        <div class="homepage-cards__card">
-          <h3 class="homepage-cards__card--top">Add notes</h3>
-          <img
-            src="./assets/notes.png"
-            alt=""
-            class="homepage-cards__card--img"
-          />
-          <h3 class="homepage-cards__card--bottom">to programs</h3>
-        </div>
-      </div>
-      <h2 class="homepage-cards__bottom-header">There is so much more</h2>
+
+    <!-- ! About us section 2 -->
+    <section class="aboutus-vision">
+      <ul class="aboutus-vision__list">
+        <h1>Our Vision</h1>
+        <li class="aboutus-vision__list--item">Simple and easy booking</li>
+        <li class="aboutus-vision__list--item">No need to ring</li>
+        <li class="aboutus-vision__list--item">See all your information</li>
+        <li class="aboutus-vision__list--item">Help needed at hand</li>
+      </ul>
+      <ul class="aboutus-vision__list">
+        <h1>Our Mission</h1>
+        <li class="aboutus-vision__list--item">Provide a bespoke experience</li>
+      </ul>
     </section>
     <!-- ! Footer -->
-
     <footer class="footer">
       <h1>Appointment +</h1>
       <div>

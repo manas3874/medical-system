@@ -1,0 +1,24 @@
+// ! Navbar styles
+.navbar {
+  background-color: #57cecece;
+  padding: 2rem 3rem;
+  &-left {
+  }
+  &-right {
+    width: 60%;
+    &__list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &--item {
+        font-size: 2rem;
+        cursor: pointer;
+        &-active {
+          font-size: 2rem;
+          border-bottom: 1px solid black;
+        }
+      }
+    }
+  }
+}
