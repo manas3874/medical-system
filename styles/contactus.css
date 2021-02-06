@@ -1,0 +1,94 @@
+.contactus {
+  height: 90vh;
+  background-color: #575757;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contactus__header {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.contactus__content {
+  font-size: 3rem;
+  color: #57cecece;
+}
+
+.contactus form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactus form input {
+  width: 60rem;
+  height: 4.5rem;
+  font-size: 2rem;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+.contactus form input::-webkit-input-placeholder {
+  font-size: 2rem;
+}
+
+.contactus form input:-ms-input-placeholder {
+  font-size: 2rem;
+}
+
+.contactus form input::-ms-input-placeholder {
+  font-size: 2rem;
+}
+
+.contactus form input::placeholder {
+  font-size: 2rem;
+}
+
+.contactus form textarea {
+  font-size: 1.8rem;
+}
+
+.contactus form textarea::-webkit-input-placeholder {
+  font-size: 2rem;
+}
+
+.contactus form textarea:-ms-input-placeholder {
+  font-size: 2rem;
+}
+
+.contactus form textarea::-ms-input-placeholder {
+  font-size: 2rem;
+}
+
+.contactus form textarea::placeholder {
+  font-size: 2rem;
+}
+
+.contactus button {
+  cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
+  background-color: #57cecece;
+  padding: 1rem 3rem;
+  margin: 1rem 0;
+  border: none;
+  outline: none;
+  border-radius: 10rem;
+}
+/*# sourceMappingURL=contactus.css.map */

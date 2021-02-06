@@ -26,8 +26,8 @@
     <link rel="stylesheet" href="base-reset.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
-    <link rel="stylesheet" href="./styles/homepage.css" />
-    <title>medical system | Home</title>
+    <link rel="stylesheet" href="./styles/contactus.css" />
+    <title>medical system | Contact</title>
   </head>
   <body>
     <!-- ! Navbar -->
@@ -37,13 +37,13 @@
       </div>
       <div class="navbar-right">
         <ul class="navbar-right__list">
-          <li class="navbar-right__list--item-active">
+          <li class="navbar-right__list--item">
             <a href="/index.html">Home</a>
           </li>
           <li class="navbar-right__list--item">
             <a href="/aboutus.html">About us</a>
           </li>
-          <li class="navbar-right__list--item">
+          <li class="navbar-right__list--item-active">
             <a href="/contactus.html">Contact us</a>
           </li>
           <li class="navbar-right__list--item">
@@ -52,72 +52,26 @@
         </ul>
       </div>
     </nav>
-    <!-- ! Banner -->
-    <section class="homepage-banner">
-      <h2 class="homepage-banner__header">
-        The one stop Doctor booking system
-      </h2>
-      <form class="homepage-banner__form">
-        <label for="doctor">
-          Select a Doctor
-          <select name="doctor">
-            <option value="Dr. Ahmed">Dr. Ahmed</option>
-            <option value="Dr. Asim">Dr. Asim</option>
-          </select>
-        </label>
-        <label for="day"
-          >Select a Day
-          <input type="date" name="day" />
-        </label>
-        <label for="time"
-          >Select a Time <input type="time" name="time"
-        /></label>
-      </form>
-    </section>
-    <!-- ! Cards -->
-    <section class="homepage-cards">
-      <div>
-        <div class="homepage-cards__card">
-          <h3 class="homepage-cards__card--top">Book an</h3>
-          <img
-            src="./assets/checkbox.png"
-            alt=""
-            class="homepage-cards__card--img"
-          />
-          <h3 class="homepage-cards__card--bottom">Appointment</h3>
-        </div>
-        <div class="homepage-cards__card">
-          <h3 class="homepage-cards__card--top">View your</h3>
-          <img
-            src="./assets/book-pen.png"
-            alt=""
-            class="homepage-cards__card--img"
-          />
-          <h3 class="homepage-cards__card--bottom">Notes</h3>
-        </div>
-        <div class="homepage-cards__card">
-          <h3 class="homepage-cards__card--top">Rearrange</h3>
-          <img
-            src="./assets/rearrange.png"
-            alt=""
-            class="homepage-cards__card--img"
-          />
-          <h3 class="homepage-cards__card--bottom">Appointments</h3>
-        </div>
-        <div class="homepage-cards__card">
-          <h3 class="homepage-cards__card--top">Add notes</h3>
-          <img
-            src="./assets/notes.png"
-            alt=""
-            class="homepage-cards__card--img"
-          />
-          <h3 class="homepage-cards__card--bottom">to programs</h3>
-        </div>
-      </div>
-      <h2 class="homepage-cards__bottom-header">There is so much more</h2>
-    </section>
-    <!-- ! Footer -->
+    <!-- ! Main section -->
 
+    <div class="contactus">
+      <h1 class="contactus__header">Contact us</h1>
+      <h3 class="contactus__content">
+        Please fill in the information and send us a message
+      </h3>
+      <form>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="text" placeholder="Subject" />
+        <textarea
+          cols="30"
+          rows="7"
+          placeholder="Enter your message"
+        ></textarea>
+      </form>
+      <button>Submit</button>
+    </div>
+    <!-- ! Footer -->
     <footer class="footer">
       <h1>Appointment +</h1>
       <div>
