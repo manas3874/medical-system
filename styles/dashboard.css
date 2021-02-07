@@ -78,7 +78,7 @@
   height: 90vh;
 }
 
-.dashboard-content .upcoming {
+.upcoming {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,17 +90,75 @@
   width: 70%;
 }
 
-.dashboard-content .upcoming .columns {
+.upcoming .columns {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   -ms-grid-column-align: center;
       justify-self: center;
+  grid-gap: 1rem;
 }
 
-.dashboard-content .upcoming .columns h1,
-.dashboard-content .upcoming .columns h2 {
+.upcoming .columns h1,
+.upcoming .columns h2 {
   height: 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.upcoming .columns button {
+  border: 1px solid #cecece;
+}
+
+.modal-body .upcoming {
+  width: 100%;
+}
+
+.modal-body .upcoming * {
+  font-size: 1.8rem;
+}
+
+.modal-body .upcoming-prescriptions {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 3fr 1fr;
+      grid-template-columns: 2fr 3fr 1fr;
+}
+
+.modal-body .upcoming-prescriptions * {
+  text-align: left;
+}
+
+.modal-body .appointment__card {
+  width: 100%;
+  padding: 3rem;
+}
+
+.modal-body .appointment__card button + button {
+  margin-left: 2rem;
+}
+
+.modal-body .view-appointment__details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 0.8rem;
+}
+
+.modal-body .view-appointment__details * {
+  font-size: 1.6rem;
+}
+
+.modal-body .view-appointment__contents {
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=dashboard.css.map */
