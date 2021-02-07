@@ -39,3 +39,29 @@ body {
     padding: 0;
 
 }
+
+button.my-btn {
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+    margin: auto;
+    background-color: #57cecece;
+    padding: 1rem 3rem;
+    margin: 1rem 0;
+    border: none;
+    outline: none;
+    border-radius: 10rem;
+}
+
+button.my-btn-small {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: auto;
+    background-color: #57cecece;
+    padding: 1rem 3rem;
+    margin: 1rem 0;
+    border: none;
+    outline: none;
+    border-radius: 10rem;
+}

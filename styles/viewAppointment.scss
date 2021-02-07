@@ -1,0 +1,46 @@
+.appointment-navbar {
+  height: 10vh;
+  background-color: #57cecece;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.appointment {
+  &-top {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    span {
+      color: #57cecece;
+    }
+  }
+  &-main {
+    width: 50%;
+    margin: 4rem auto;
+    border: 5px solid #57cecece;
+    display: flex;
+    flex-direction: column;
+    > div {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    textarea {
+      margin: 3rem;
+    }
+    .selects {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      label {
+        display: flex;
+        flex-direction: column;
+
+        font-size: 1.4rem;
+        width: 33%;
+      }
+    }
+  }
+}

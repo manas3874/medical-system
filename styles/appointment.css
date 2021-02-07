@@ -99,22 +99,4 @@
   outline: none;
   border-radius: 10rem;
 }
-
-.appointment__card .carousel.slide {
-  width: 100%;
-}
-
-.appointment__card .carousel.slide .carousel-item,
-.appointment__card .carousel.slide .active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.appointment__card .carousel.slide .carousel-item img,
-.appointment__card .carousel.slide .active img {
-  margin: auto;
-  width: 10rem;
-  border-radius: 20rem;
-}
 /*# sourceMappingURL=appointment.css.map */

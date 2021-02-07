@@ -38,7 +38,38 @@
     <!-- ! Dashboard nav -->
     <nav class="dashboard-navbar">
       <div class="dashboard-navbar__left">
-        <a href="/index.html">View appointments</a>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            View appointment
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a
+              href="/doctor/view-appointment.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View appointment 1</a
+            >
+            <a
+              href="/doctor/view-appointment.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View appointment 2</a
+            >
+            <a
+              href="/doctor/view-appointment.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View appointment 3</a
+            >
+          </div>
+        </div>
         <div class="dropdown">
           <button
             class="btn btn-secondary dropdown-toggle"
