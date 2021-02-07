@@ -14,6 +14,9 @@
     span {
       color: #57cecece;
     }
+    @media screen and(max-width:600px) {
+      flex-direction: column;
+    }
   }
   &-main {
     width: 50%;
@@ -21,6 +24,9 @@
     border: 5px solid #57cecece;
     display: flex;
     flex-direction: column;
+    @media screen and(max-width:600px) {
+      width: 90%;
+    }
     > div {
       display: flex;
       justify-content: space-evenly;

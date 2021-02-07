@@ -44,6 +44,9 @@
       list-style: none;
       display: flex;
       flex-direction: column;
+      * {
+        color: #fff;
+      }
       @media screen and(max-width:600px) {
         flex-direction: row;
         align-items: center;

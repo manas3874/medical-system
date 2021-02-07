@@ -35,98 +35,140 @@
     <title>medical system | Dashboard</title>
   </head>
   <body>
-    <!-- ! Dashboard nav -->
-    <nav class="dashboard-navbar">
-      <div class="dashboard-navbar__left">
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
+    <!-- ! bootstrap navbar -->
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <!-- ! Navlist here -->
+          <ul
+            class="navbar-right__list dashboard-main-nav"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+            "
           >
-            Appointments
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button viewPreviousAppointments -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#viewPreviousAppointments"
-            >
-              View previous appointments
-            </button>
-            <!-- ! button editAppointments -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#editAppointments"
-            >
-              Edit appointments
-            </button>
-            <!-- ! button bookAppointments -->
+            <li class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Appointments
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <!-- ! button viewPreviousAppointments -->
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#viewPreviousAppointments"
+                >
+                  View previous appointments
+                </button>
+                <!-- ! button editAppointments -->
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#editAppointments"
+                >
+                  Edit appointments
+                </button>
+                <!-- ! button bookAppointments -->
 
-            <a href="/appointment.html" class="dropdown-item"
-              >Book appointments</a
-            >
-          </div>
-        </div>
-        <a href="/index.html">Programs</a>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Edit profile
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button editProfile -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#editProfile"
-            >
-              Edit
-            </button>
-          </div>
-        </div>
-        <a
-          ><!-- ! button viewPrescriptions -->
-          <button
-            type="button"
-            class="btn btn-primary dropdown-item"
-            data-toggle="modal"
-            data-target="#viewPrescriptions"
-          >
-            Prescriptions
-          </button>
-        </a>
+                <a href="/appointment.html" class="dropdown-item"
+                  >Book appointments</a
+                >
+              </div>
+            </li>
+            <li>
+              <a href="/index.html">Programs</a>
+            </li>
 
-        <!-- ! button viewMedicalHistory -->
+            <li class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Edit profile
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <!-- ! button editProfile -->
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#editProfile"
+                >
+                  Edit
+                </button>
+              </div>
+            </li>
+            <!-- ! button viewPrescriptions -->
+            <li>
+              <button
+                type="button"
+                class="dropdown-item"
+                data-toggle="modal"
+                data-target="#viewPrescriptions"
+              >
+                Prescriptions
+              </button>
+            </li>
+
+            <!-- ! button viewMedicalHistory -->
+            <li>
+              <button
+                type="button"
+                class="dropdown-item"
+                data-toggle="modal"
+                data-target="#viewMedicalHistory"
+              >
+                View medical history
+              </button>
+            </li>
+
+            <li>
+              <a href="/index.html">documents</a>
+            </li>
+
+            <li class="dashboard-navbar__right">
+              <a href="/index.html" style="color: #fff">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav
+        class="navbar navbar-dark"
+        style="position: relative; background-color: #57cecece; height: 10vh"
+      >
+        <h2 class="navbar-left__logo">Appointment +</h2>
         <button
+          class="navbar-toggler"
           type="button"
-          class="btn btn-primary dropdown-item"
-          data-toggle="modal"
-          data-target="#viewMedicalHistory"
+          data-toggle="collapse"
+          data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="position: absolute; right: 3rem"
         >
-          View medical history
+          <img
+            src="../assets/hamburger.png"
+            alt="menu-icon"
+            style="width: 3rem"
+          />
         </button>
-
-        <a href="/index.html">documents</a>
-      </div>
-      <div class="dashboard-navbar__right">
-        <a href="/index.html">Logout</a>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
     <!-- ! Modal viewPreviousAppointments-->
     <div
@@ -195,8 +237,8 @@
           <div class="modal-footer">
             <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            </button><hr>
+            <button type="button" class="my-btn-small">Save changes</button>
           </div>
         </div>
       </div>
@@ -268,8 +310,8 @@
           <div class="modal-footer">
             <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            </button><hr>
+            <button type="button" class="my-btn-small">Save changes</button>
           </div>
         </div>
       </div>
@@ -341,7 +383,8 @@
             <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <hr />
+            <button type="button" class="my-btn-small">Save changes</button>
           </div>
         </div>
       </div>
@@ -410,7 +453,8 @@
             <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <hr />
+            <button type="button" class="my-btn-small">Save changes</button>
           </div>
         </div>
       </div>

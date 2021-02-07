@@ -22,7 +22,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" href="../base-reset.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
@@ -31,79 +36,114 @@
     <title>medical system | Dashboard</title>
   </head>
   <body>
-    <!-- ! Dashboard nav -->
-    <nav class="dashboard-navbar">
-      <div class="dashboard-navbar__left">
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
+    <!-- ! bootstrap navbar -->
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <!-- ! Navlist here -->
+          <ul
+            class="navbar-right__list dashboard-main-nav"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+            "
           >
-            Add miscellaneous task
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button addTask -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#addTask"
-            >
-              Add task
-            </button>
-            <!-- ! button viewTask -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#viewTask"
-            >
-              View task
-            </button>
-            <!-- ! button bookAppointments -->
-          </div>
-        </div>
+            <li class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Add miscellaneous task
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <!-- ! button addTask -->
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#addTask"
+                >
+                  Add task
+                </button>
+                <!-- ! button viewTask -->
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#viewTask"
+                >
+                  View task
+                </button>
+                <!-- ! button bookAppointments -->
+              </div>
+            </li>
 
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            View patient prescription
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button today -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#today"
-            >
-              today
-            </button>
-            <!-- ! button search -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#search"
-            >
-              search
-            </button>
-          </div>
+            <li class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                View patient prescription
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <!-- ! button today -->
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#today"
+                >
+                  today
+                </button>
+                <!-- ! button search -->
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#search"
+                >
+                  search
+                </button>
+              </div>
+            </li>
+            <li class="dashboard-navbar__right">
+              <a href="/index.html" style="color: #fff">Logout</a>
+            </li>
+          </ul>
         </div>
-       <div class="dashboard-navbar__right">
-        <a href="/index.html">Logout</a>
       </div>
-    </nav>
+      <nav
+        class="navbar navbar-dark"
+        style="position: relative; background-color: #57cecece; height: 10vh"
+      >
+        <h2 class="navbar-left__logo">Appointment +</h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="position: absolute; right: 3rem"
+        >
+          <img
+            src="../assets/hamburger.png"
+            alt="menu-icon"
+            style="width: 3rem"
+          />
+        </button>
+      </nav>
+    </div>
 
     <!-- ! Modal addTask-->
     <div
@@ -129,19 +169,20 @@
           </div>
           <div class="modal-body">
             <h1>Add task</h1>
-            <hr>
+            <hr />
             <h3>Date: 20-2-2021</h3>
-            <hr>
+            <hr />
             <h3>Name: Doe</h3>
-            <hr>
-            <textarea name="description" placeholder="description" cols="60" rows="10"></textarea>
+            <hr />
+            <textarea
+              name="description"
+              placeholder="description"
+              cols="60"
+              rows="10"
+            ></textarea>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="my-btn-small"
-              data-dismiss="modal"
-            >
+            <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
             </button>
             <button type="button" class="btn btn-primary">Save changes</button>
@@ -161,9 +202,7 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">
-              viewTask
-            </h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">viewTask</h5>
             <button
               type="button"
               class="close"
@@ -175,24 +214,24 @@
           </div>
           <div class="modal-body">
             <h1>Add task</h1>
-            <hr>
+            <hr />
             <h3>Date: 20-2-2021</h3>
-            <hr>
+            <hr />
             <h3>Name: Doe</h3>
-            <hr>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit obcaecati beatae architecto accusantium, quasi illum non eaque cupiditate voluptatibus eius assumenda nisi laboriosam doloribus voluptatum iure, quam ipsa.</p>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis
+              velit obcaecati beatae architecto accusantium, quasi illum non
+              eaque cupiditate voluptatibus eius assumenda nisi laboriosam
+              doloribus voluptatum iure, quam ipsa.
+            </p>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="my-btn-small"
-              data-dismiss="modal"
-            >
+            <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
             </button>
             <button type="button" class="btn btn-primary">Save changes</button>
             <button type="button" class="btn btn-danger">Delete</button>
-            
           </div>
         </div>
       </div>
@@ -220,14 +259,14 @@
             </button>
           </div>
           <div class="modal-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis expedita in, facere a odio nulla optio ratione necessitatibus nisi vero.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              expedita in, facere a odio nulla optio ratione necessitatibus nisi
+              vero.
+            </p>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="my-btn-small"
-              data-dismiss="modal"
-            >
+            <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
             </button>
             <button type="button" class="btn btn-primary">Save changes</button>
@@ -247,9 +286,7 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">
-              search
-            </h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">search</h5>
             <button
               type="button"
               class="close"
@@ -260,15 +297,10 @@
             </button>
           </div>
           <div class="modal-body">
-            <input type="text" placeholder="Search">
-
+            <input type="text" placeholder="Search" />
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="my-btn-small"
-              data-dismiss="modal"
-            >
+            <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
             </button>
             <button type="button" class="btn btn-primary">Search</button>
@@ -321,11 +353,7 @@
             </section>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="my-btn-small"
-              data-dismiss="modal"
-            >
+            <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
             </button>
           </div>
@@ -410,11 +438,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="my-btn-small"
-              data-dismiss="modal"
-            >
+            <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
             </button>
           </div>
@@ -517,11 +541,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="my-btn-small"
-              data-dismiss="modal"
-            >
+            <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
             </button>
             <button type="button" class="btn btn-primary">Save changes</button>
@@ -532,234 +552,323 @@
     <!-- ! Dashboard content -->
     <div class="dashboard-content">
       <h1>Calendar</h1>
-        <div class="container my-4">
-
-   
-    <!--Carousel Wrapper-->
-    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-      <!--Controls-->
-      <div class="controls-top" style="display: flex; align-items: center; justify-content: space-between;">
-        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left fa-3x"></i></a>
-        <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right fa-3x"></i></a>
-      </div>
-      <!--/.Controls-->
-
-      <!--Indicators-->
-      <ol class="carousel-indicators">
-        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-        <li data-target="#multi-item-example" data-slide-to="1"></li>
-        
-      </ol>
-      <!--/.Indicators-->
-
-      <!--Slides-->
-      <div class="carousel-inner" role="listbox">
-
-        <!--First slide-->
-        <div class="carousel-item active">
-
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-2">
-                
-                <div class="card-body">
-                  <h1 class="card-title" style="text-align: center;margin-bottom: 2rem;">Doctor A</h1>
-                  <div style="display: flex; justify-content: space-evenly;">
-                      <h3 class="time">07:00 AM</h3>
-                  <h3 class="patient">Mona xyz</h3>
-                  </div>
-                  <p class="card-text" style="margin: 2rem 0; font-size: 1.7rem;">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">View</a>
-                  <hr style="border-bottom:1px solid grey;">
-                  
-                  <div style="display: flex; justify-content: space-evenly;">
-                      <h3 class="time">07:00 AM</h3>
-                  <h3 class="patient">Mona xyz</h3>
-                  </div>
-                  <p class="card-text" style="margin: 2rem 0; font-size: 1.7rem;">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">View</a>
-                  <hr style="border-bottom:1px solid grey;">
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 clearfix d-none d-md-block">
-              <div class="card mb-2">
-                
-                <div class="card-body">
-                   <h1 class="card-title" style="text-align: center;margin-bottom: 2rem;">Doctor B</h1>
-                  <div style="display: flex; justify-content: space-evenly;">
-                      <h3 class="time">07:00 AM</h3>
-                  <h3 class="patient">Mona xyz</h3>
-                  </div>
-                  <p class="card-text" style="margin: 2rem 0; font-size: 1.7rem;">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">View</a>
-                  <hr style="border-bottom:1px solid grey;">
-                  
-                  <div style="display: flex; justify-content: space-evenly;">
-                      <h3 class="time">07:00 AM</h3>
-                  <h3 class="patient">Mona xyz</h3>
-                  </div>
-                  <p class="card-text" style="margin: 2rem 0; font-size: 1.7rem;">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">View</a>
-                  <hr style="border-bottom:1px solid grey;">
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 clearfix d-none d-md-block">
-              <div class="card mb-2">
-                
-                <div class="card-body">
-                   <h1 class="card-title" style="text-align: center;margin-bottom: 2rem;">Doctor C</h1>
-                  <div style="display: flex; justify-content: space-evenly;">
-                      <h3 class="time">07:00 AM</h3>
-                  <h3 class="patient">Mona xyz</h3>
-                  </div>
-                  <p class="card-text" style="margin: 2rem 0; font-size: 1.7rem;">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">View</a>
-                  <hr style="border-bottom:1px solid grey;">
-                  
-                  <div style="display: flex; justify-content: space-evenly;">
-                      <h3 class="time">07:00 AM</h3>
-                  <h3 class="patient">Mona xyz</h3>
-                  </div>
-                  <p class="card-text" style="margin: 2rem 0; font-size: 1.7rem;">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">View</a>
-                  <hr style="border-bottom:1px solid grey;">
-                </div>
-              </div>
-            </div>
+      <div class="container my-4">
+        <!--Carousel Wrapper-->
+        <div
+          id="multi-item-example"
+          class="carousel slide carousel-multi-item"
+          data-ride="carousel"
+        >
+          <!--Controls-->
+          <div
+            class="controls-top"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <a class="btn-floating" href="#multi-item-example" data-slide="prev"
+              ><i class="fa fa-chevron-left fa-3x"></i
+            ></a>
+            <a class="btn-floating" href="#multi-item-example" data-slide="next"
+              ><i class="fa fa-chevron-right fa-3x"></i
+            ></a>
           </div>
+          <!--/.Controls-->
 
-        </div>
-        <!--/.First slide-->
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li
+              data-target="#multi-item-example"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#multi-item-example" data-slide-to="1"></li>
+          </ol>
+          <!--/.Indicators-->
 
-        <!--Second slide-->
-        <div class="carousel-item">
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <div class="card-body">
+                      <h1
+                        class="card-title"
+                        style="text-align: center; margin-bottom: 2rem"
+                      >
+                        Doctor A
+                      </h1>
+                      <div style="display: flex; justify-content: space-evenly">
+                        <h3 class="time">07:00 AM</h3>
+                        <h3 class="patient">Mona xyz</h3>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="margin: 2rem 0; font-size: 1.7rem"
+                      >
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a class="btn btn-primary">View</a>
+                      <hr style="border-bottom: 1px solid grey" />
 
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-2">
-                
-                <div class="card-body">
-                   <h1 class="card-title" style="text-align: center;margin-bottom: 2rem;">Doctor D</h1>
-                  <div style="display: flex; justify-content: space-evenly;">
-                      <h3 class="time">07:00 AM</h3>
-                  <h3 class="patient">Mona xyz</h3>
+                      <div style="display: flex; justify-content: space-evenly">
+                        <h3 class="time">07:00 AM</h3>
+                        <h3 class="patient">Mona xyz</h3>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="margin: 2rem 0; font-size: 1.7rem"
+                      >
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a class="btn btn-primary">View</a>
+                      <hr style="border-bottom: 1px solid grey" />
+                    </div>
                   </div>
-                  <p class="card-text" style="margin: 2rem 0; font-size: 1.7rem;">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">View</a>
-                  <hr style="border-bottom:1px solid grey;">
-                  
-                  <div style="display: flex; justify-content: space-evenly;">
-                      <h3 class="time">07:00 AM</h3>
-                  <h3 class="patient">Mona xyz</h3>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <div class="card-body">
+                      <h1
+                        class="card-title"
+                        style="text-align: center; margin-bottom: 2rem"
+                      >
+                        Doctor B
+                      </h1>
+                      <div style="display: flex; justify-content: space-evenly">
+                        <h3 class="time">07:00 AM</h3>
+                        <h3 class="patient">Mona xyz</h3>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="margin: 2rem 0; font-size: 1.7rem"
+                      >
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a class="btn btn-primary">View</a>
+                      <hr style="border-bottom: 1px solid grey" />
+
+                      <div style="display: flex; justify-content: space-evenly">
+                        <h3 class="time">07:00 AM</h3>
+                        <h3 class="patient">Mona xyz</h3>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="margin: 2rem 0; font-size: 1.7rem"
+                      >
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a class="btn btn-primary">View</a>
+                      <hr style="border-bottom: 1px solid grey" />
+                    </div>
                   </div>
-                  <p class="card-text" style="margin: 2rem 0; font-size: 1.7rem;">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">View</a>
-                  <hr style="border-bottom:1px solid grey;">
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <div class="card-body">
+                      <h1
+                        class="card-title"
+                        style="text-align: center; margin-bottom: 2rem"
+                      >
+                        Doctor C
+                      </h1>
+                      <div style="display: flex; justify-content: space-evenly">
+                        <h3 class="time">07:00 AM</h3>
+                        <h3 class="patient">Mona xyz</h3>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="margin: 2rem 0; font-size: 1.7rem"
+                      >
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a class="btn btn-primary">View</a>
+                      <hr style="border-bottom: 1px solid grey" />
+
+                      <div style="display: flex; justify-content: space-evenly">
+                        <h3 class="time">07:00 AM</h3>
+                        <h3 class="patient">Mona xyz</h3>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="margin: 2rem 0; font-size: 1.7rem"
+                      >
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a class="btn btn-primary">View</a>
+                      <hr style="border-bottom: 1px solid grey" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            <!--/.First slide-->
 
-            <div class="col-md-4 clearfix d-none d-md-block">
-              <div class="card mb-2">
-                
-                <div class="card-body">
-                  <h1 class="card-title" style="text-align: center;margin-bottom: 2rem;">Doctor E</h1>
-                  <div style="display: flex; justify-content: space-evenly;">
-                      <h3 class="time">07:00 AM</h3>
-                  <h3 class="patient">Mona xyz</h3>
+            <!--Second slide-->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <div class="card-body">
+                      <h1
+                        class="card-title"
+                        style="text-align: center; margin-bottom: 2rem"
+                      >
+                        Doctor D
+                      </h1>
+                      <div style="display: flex; justify-content: space-evenly">
+                        <h3 class="time">07:00 AM</h3>
+                        <h3 class="patient">Mona xyz</h3>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="margin: 2rem 0; font-size: 1.7rem"
+                      >
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a class="btn btn-primary">View</a>
+                      <hr style="border-bottom: 1px solid grey" />
+
+                      <div style="display: flex; justify-content: space-evenly">
+                        <h3 class="time">07:00 AM</h3>
+                        <h3 class="patient">Mona xyz</h3>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="margin: 2rem 0; font-size: 1.7rem"
+                      >
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a class="btn btn-primary">View</a>
+                      <hr style="border-bottom: 1px solid grey" />
+                    </div>
                   </div>
-                  <p class="card-text" style="margin: 2rem 0; font-size: 1.7rem;">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">View</a>
-                  <hr style="border-bottom:1px solid grey;">
-                  
-                  <div style="display: flex; justify-content: space-evenly;">
-                      <h3 class="time">07:00 AM</h3>
-                  <h3 class="patient">Mona xyz</h3>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <div class="card-body">
+                      <h1
+                        class="card-title"
+                        style="text-align: center; margin-bottom: 2rem"
+                      >
+                        Doctor E
+                      </h1>
+                      <div style="display: flex; justify-content: space-evenly">
+                        <h3 class="time">07:00 AM</h3>
+                        <h3 class="patient">Mona xyz</h3>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="margin: 2rem 0; font-size: 1.7rem"
+                      >
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a class="btn btn-primary">View</a>
+                      <hr style="border-bottom: 1px solid grey" />
+
+                      <div style="display: flex; justify-content: space-evenly">
+                        <h3 class="time">07:00 AM</h3>
+                        <h3 class="patient">Mona xyz</h3>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="margin: 2rem 0; font-size: 1.7rem"
+                      >
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a class="btn btn-primary">View</a>
+                      <hr style="border-bottom: 1px solid grey" />
+                    </div>
                   </div>
-                  <p class="card-text" style="margin: 2rem 0; font-size: 1.7rem;">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">View</a>
-                  <hr style="border-bottom:1px solid grey;">
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <div class="card-body">
+                      <h1
+                        class="card-title"
+                        style="text-align: center; margin-bottom: 2rem"
+                      >
+                        Doctor F
+                      </h1>
+                      <div style="display: flex; justify-content: space-evenly">
+                        <h3 class="time">07:00 AM</h3>
+                        <h3 class="patient">Mona xyz</h3>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="margin: 2rem 0; font-size: 1.7rem"
+                      >
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a class="btn btn-primary">View</a>
+                      <hr style="border-bottom: 1px solid grey" />
+
+                      <div style="display: flex; justify-content: space-evenly">
+                        <h3 class="time">07:00 AM</h3>
+                        <h3 class="patient">Mona xyz</h3>
+                      </div>
+                      <p
+                        class="card-text"
+                        style="margin: 2rem 0; font-size: 1.7rem"
+                      >
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                      <a class="btn btn-primary">View</a>
+                      <hr style="border-bottom: 1px solid grey" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div class="col-md-4 clearfix d-none d-md-block">
-              <div class="card mb-2">
-                
-                <div class="card-body">
-                   <h1 class="card-title" style="text-align: center;margin-bottom: 2rem;">Doctor F</h1>
-                  <div style="display: flex; justify-content: space-evenly;">
-                      <h3 class="time">07:00 AM</h3>
-                  <h3 class="patient">Mona xyz</h3>
-                  </div>
-                  <p class="card-text" style="margin: 2rem 0; font-size: 1.7rem;">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">View</a>
-                  <hr style="border-bottom:1px solid grey;">
-                  
-                  <div style="display: flex; justify-content: space-evenly;">
-                      <h3 class="time">07:00 AM</h3>
-                  <h3 class="patient">Mona xyz</h3>
-                  </div>
-                  <p class="card-text" style="margin: 2rem 0; font-size: 1.7rem;">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">View</a>
-                  <hr style="border-bottom:1px solid grey;">
-                </div>
-              </div>
-            </div>
+            <!--/.Second slide-->
           </div>
-
+          <!--/.Slides-->
         </div>
-        <!--/.Second slide-->
-
+        <!--/.Carousel Wrapper-->
       </div>
-      <!--/.Slides-->
-
     </div>
-    <!--/.Carousel Wrapper-->
-
-
-  </div>
-    </div>
-<div class="nurse-miscellaneous-task">
-    <div class="columns">
+    <div class="nurse-miscellaneous-task">
+      <div class="columns">
         <h1>Date</h1>
         <h3>23-10-2020</h3>
         <h3>23-10-2020</h3>
-    </div>
-    <div class="columns">
+      </div>
+      <div class="columns">
         <h1>Name</h1>
         <h3>Mr. D Joe</h3>
         <h3>Mr. D Joe</h3>
-    </div>
-    <div class="columns">
+      </div>
+      <div class="columns">
         <h1>Description</h1>
         <h3>Nurse needed on 30-10-2020</h3>
         <h3>Nurse needed on 30-10-2020</h3>
-    </div>
-    <div class="columns">
+      </div>
+      <div class="columns">
         <h1>Action</h1>
         <button class="btn btn-primary">View</button>
         <button class="btn btn-primary">View</button>
+      </div>
     </div>
-
-</div>
     <!-- ! bootstrap js import-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

@@ -29,6 +29,15 @@
   color: #57cecece;
 }
 
+@media screen and (max-width: 600px) {
+  .appointment-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .appointment-main {
   width: 50%;
   margin: 4rem auto;
@@ -40,6 +49,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .appointment-main {
+    width: 90%;
+  }
 }
 
 .appointment-main > div {

@@ -35,91 +35,125 @@
     <title>medical system | Dashboard</title>
   </head>
   <body>
-    <!-- ! Dashboard nav -->
-    <nav class="dashboard-navbar">
-      <div class="dashboard-navbar__left">
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
+    <!-- ! bootstrap navbar -->
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <!-- ! Navlist here -->
+          <ul
+            class="navbar-right__list dashboard-main-nav"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+            "
           >
-            Create invoice
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#patientInvoice"
-            >
-              Patient
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#companyInvoice"
-            >
-              Company
-            </button>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Register doctor
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button addDoctor -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#addDoctor"
-            >
-              Add doctor to program
-            </button>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Register nurse
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button addNurse -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#addNurse"
-            >
-              Add nurse to program
-            </button>
-          </div>
+            <li class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Create invoice
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#patientInvoice"
+                >
+                  Patient
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#companyInvoice"
+                >
+                  Company
+                </button>
+              </div>
+            </li>
+            <li class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Register doctor
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <!-- ! button addDoctor -->
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#addDoctor"
+                >
+                  Add doctor to program
+                </button>
+              </div>
+            </li>
+            <li class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Register nurse
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <!-- ! button addNurse -->
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#addNurse"
+                >
+                  Add nurse to program
+                </button>
+              </div>
+            </li>
+            <li class="dashboard-navbar__right">
+              <a href="/index.html" style="color: #fff">Logout</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="dashboard-navbar__right">
-        <a href="/index.html">Logout</a>
-      </div>
-    </nav>
-
+      <nav
+        class="navbar navbar-dark"
+        style="position: relative; background-color: #57cecece; height: 10vh"
+      >
+        <h2 class="navbar-left__logo">Appointment +</h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="position: absolute; right: 3rem"
+        >
+          <img
+            src="../assets/hamburger.png"
+            alt="menu-icon"
+            style="width: 3rem"
+          />
+        </button>
+      </nav>
+    </div>
+    
     <!-- ! Modal patientInvoice-->
     <div
       class="modal fade"

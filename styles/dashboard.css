@@ -1,64 +1,45 @@
-.dashboard-navbar {
-  height: 10vh;
-  background-color: #57cecece;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 3rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.dashboard-main-nav li {
+  list-style: none;
 }
 
-.dashboard-navbar * {
-  color: #fff;
+.dashboard-main-nav li * {
+  color: #fff !important;
+  font-size: 1.5rem !important;
+}
+
+.dashboard-main-nav li button {
+  background-color: transparent;
+  border: none;
+  outline: none;
   font-size: 1.5rem;
 }
 
-.dashboard-navbar__left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 90%;
+@media screen and (max-width: 1020px) {
+  .dashboard-main-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dashboard-main-nav > li {
+    margin-bottom: 1rem;
+  }
 }
 
-.dashboard-navbar__left .dropdown {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.dashboard-main-nav .dropdown-menu a {
+  color: #000 !important;
 }
 
-.dashboard-navbar__left .dropdown-menu * {
-  color: black;
+.dashboard-main-nav .dropdown-menu a:hover {
+  background-color: transparent;
 }
 
-.dashboard-navbar__left .dropdown button {
+.dashboard-main-nav .dropdown-menu .dropdown-item:hover {
   background-color: transparent !important;
-  border: none;
 }
 
-.dashboard-navbar__left .dropdown button:hover {
-  background: none;
-  color: black;
-}
-
-.dashboard-navbar__right a {
-  padding: 1rem 3rem;
-  border: 2px solid #229e9e;
+.dashboard-main-nav .btn.btn-primary {
+  color: #000 !important;
 }
 
 .dashboard-content {
@@ -78,6 +59,12 @@
   height: 90vh;
 }
 
+@media screen and (max-width: 600px) {
+  .dashboard-content * {
+    font-size: 1.5rem;
+  }
+}
+
 .upcoming {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,6 +75,12 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+  .upcoming {
+    width: 90%;
+  }
 }
 
 .upcoming .columns {
@@ -171,6 +164,12 @@
 
 .modal-body.letter textarea {
   width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .modal-body * {
+    font-size: 1.5rem !important;
+  }
 }
 
 .nurse-miscellaneous-task {

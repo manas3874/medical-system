@@ -35,184 +35,218 @@
     <title>medical system | Dashboard</title>
   </head>
   <body>
-    <!-- ! Dashboard nav -->
-    <nav class="dashboard-navbar">
-      <div class="dashboard-navbar__left">
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
+    <!-- ! bootstrap navbar -->
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <!-- ! Navlist here -->
+          <ul
+            class="navbar-right__list dashboard-main-nav"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+            "
           >
-            View appointment
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a
-              href="/doctor/view-appointment.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              >View appointment 1</a
-            >
-            <a
-              href="/doctor/view-appointment.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              >View appointment 2</a
-            >
-            <a
-              href="/doctor/view-appointment.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              >View appointment 3</a
-            >
-          </div>
-        </div>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Add patient
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button addPatient -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#addPatient"
-            >
-              Add patient to program
-            </button>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Add medicine
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button medicine -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#medicine"
-            >
-              Add medicine
-            </button>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            letters
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button letters -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#letters"
-            >
-              letters
-            </button>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            reportsAndAudits
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button reportsAndAudits -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#reportsAndAudits"
-            >
-              reportsAndAudits
-            </button>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            docs
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button docs -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#docs"
-            >
-              docs
-            </button>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            profile
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button profile -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#editProfile"
-            >
-              profile
-            </button>
-          </div>
+            <li class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                View appointment
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a
+                  href="/doctor/view-appointment.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View appointment 1</a
+                >
+                <a
+                  href="/doctor/view-appointment.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View appointment 2</a
+                >
+                <a
+                  href="/doctor/view-appointment.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View appointment 3</a
+                >
+              </div>
+            </li>
+            <li class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Add patient
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <!-- ! button addPatient -->
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#addPatient"
+                >
+                  Add patient to program
+                </button>
+              </div>
+            </li>
+            <li class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Add medicine
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <!-- ! button medicine -->
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#medicine"
+                >
+                  Add medicine
+                </button>
+              </div>
+            </li>
+            <li class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                letters
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <!-- ! button letters -->
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#letters"
+                >
+                  letters
+                </button>
+              </div>
+            </li>
+            <li class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                reportsAndAudits
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <!-- ! button reportsAndAudits -->
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#reportsAndAudits"
+                >
+                  reportsAndAudits
+                </button>
+              </div>
+            </li>
+            <li class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                docs
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <!-- ! button docs -->
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#docs"
+                >
+                  docs
+                </button>
+              </div>
+            </li>
+            <li class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                profile
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <!-- ! button profile -->
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#editProfile"
+                >
+                  profile
+                </button>
+              </div>
+            </li>
+            <li class="dashboard-navbar__right">
+              <a href="/index.html" style="color: #fff">Logout</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="dashboard-navbar__right">
-        <a href="/index.html">Logout</a>
-      </div>
-    </nav>
+      <nav
+        class="navbar navbar-dark"
+        style="position: relative; background-color: #57cecece; height: 10vh"
+      >
+        <h2 class="navbar-left__logo">Appointment +</h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="position: absolute; right: 3rem"
+        >
+          <img
+            src="../assets/hamburger.png"
+            alt="menu-icon"
+            style="width: 3rem"
+          />
+        </button>
+      </nav>
+    </div>
 
     <!-- ! Modal addPatient-->
     <div

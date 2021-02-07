@@ -77,6 +77,10 @@
           flex-direction: column;
 }
 
+.footer__nav-center--list * {
+  color: #fff;
+}
+
 @media screen and (max-width: 600px) {
   .footer__nav-center--list {
     -webkit-box-orient: horizontal;

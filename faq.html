@@ -30,28 +30,49 @@
     <title>medical system | Book an appointment</title>
   </head>
   <body>
-    <!-- ! Navbar -->
-    <nav class="navbar">
-      <div class="navbar-left">
+    <!-- ! bootstrap navbar -->
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <ul class="navbar-right__list">
+            <li class="navbar-right__list--item-active">
+              <a href="/index.html">Home</a>
+            </li>
+            <li class="navbar-right__list--item">
+              <a href="/aboutus.html">About us</a>
+            </li>
+            <li class="navbar-right__list--item">
+              <a href="/contactus.html">Contact us</a>
+            </li>
+            <li class="navbar-right__list--item">
+              <a href="/appointment.html">Book appointment</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav
+        class="navbar navbar-dark"
+        style="position: relative; background-color: #57cecece"
+      >
         <h2 class="navbar-left__logo">Appointment +</h2>
-      </div>
-      <div class="navbar-right">
-        <ul class="navbar-right__list">
-          <li class="navbar-right__list--item">
-            <a href="/index.html">Home</a>
-          </li>
-          <li class="navbar-right__list--item">
-            <a href="/aboutus.html">About us</a>
-          </li>
-          <li class="navbar-right__list--item">
-            <a href="/contactus.html">Contact us</a>
-          </li>
-          <li class="navbar-right__list--item-active">
-            <a href="/appointment.html">Book appointment</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="position: absolute; right: 3rem"
+        >
+          <img
+            src="./assets/hamburger.png"
+            alt="menu-icon"
+            style="width: 3rem"
+          />
+        </button>
+      </nav>
+    </div>
     <!-- ! FAQ page content -->
     <div class="faq">
       <h1 class="faq__header">FAQ</h1>
@@ -197,9 +218,15 @@
         </div>
         <div class="footer__nav-center">
           <ul class="footer__nav-center--list">
-            <li class="footer__nav-center--list-item">Doctor login</li>
-            <li class="footer__nav-center--list-item">Nurses login</li>
-            <li class="footer__nav-center--list-item">Admin login</li>
+            <li class="footer__nav-center--list-item">
+              <a href="/doctor/dashboard.html">Doctor login</a>
+            </li>
+            <li class="footer__nav-center--list-item">
+              <a href="/nurse/dashboard.html">Nurse login</a>
+            </li>
+            <li class="footer__nav-center--list-item">
+              <a href="/admin/dashboard.html">Admin login</a>
+            </li>
           </ul>
         </div>
         <div class="footer__nav-right">

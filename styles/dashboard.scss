@@ -1,45 +1,38 @@
-.dashboard-navbar {
-  height: 10vh;
-  background-color: #57cecece;
-  display: flex;
-  align-items: center;
-  padding: 0 3rem;
-  justify-content: space-between;
-  * {
-    color: #fff;
-    font-size: 1.5rem;
-  }
-  &__left {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 90%;
-
-    .dropdown {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      &-menu {
-        * {
-          color: black;
-        }
-      }
-      button {
-        background-color: transparent !important;
-        border: none;
-
-        &:hover {
-          background: none;
-          color: black;
-        }
-      }
+.dashboard-main-nav {
+  li {
+    list-style: none;
+    * {
+      color: #fff !important;
+      font-size: 1.5rem !important;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      font-size: 1.5rem;
     }
   }
-  &__right {
+  @media screen and(max-width:1020px) {
+    flex-direction: column;
+    > li {
+      margin-bottom: 1rem;
+    }
+  }
+  .dropdown-menu {
     a {
-      padding: 1rem 3rem;
-      border: 2px solid #229e9e;
+      color: #000 !important;
+      &:hover {
+        background-color: transparent;
+      }
     }
+    .dropdown-item {
+      &:hover {
+        background-color: transparent !important;
+      }
+    }
+  }
+  .btn.btn-primary {
+    color: #000 !important;
   }
 }
 
@@ -49,13 +42,20 @@
   align-items: center;
   justify-content: space-evenly;
   height: 90vh;
+  @media screen and(max-width:600px) {
+    * {
+      font-size: 1.5rem;
+    }
+  }
 }
 .upcoming {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 70%;
-
+  @media screen and(max-width:600px) {
+    width: 90%;
+  }
   .columns {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -117,6 +117,11 @@
     }
     textarea {
       width: 100%;
+    }
+  }
+  @media screen and(max-width:600px) {
+    * {
+      font-size: 1.5rem !important;
     }
   }
 }
