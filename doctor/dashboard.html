@@ -236,16 +236,24 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">...</div>
+          <div
+            class="modal-body letter"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+            "
+          >
+            <h1>Add patient</h1>
+            <hr />
+            <label for="patientName"
+              >Patient Name: <input type="text" name="patientName"
+            /></label>
+          </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
+            <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
@@ -272,16 +280,24 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">...</div>
+          <div
+            class="modal-body letter"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+            "
+          >
+            <h1>Add patient</h1>
+            <hr />
+            <label for="medName"
+              >medicine Name: <input type="text" name="medName"
+            /></label>
+          </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
+            <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
@@ -350,14 +366,9 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
+            <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
@@ -384,16 +395,24 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">...</div>
+          <div
+            class="modal-body letter"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+            "
+          >
+            <h1 style="text-align: center">Create letter</h1>
+            <input type="text" placeholder="To" />
+            <input type="text" placeholder="From" />
+            <input type="date" />
+            <input type="text" placeholder="Subject" />
+            <hr />
+            <textarea cols="30" rows="10" placeholder="Description"></textarea>
+          </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button class="my-btn-small">Submit</button>
           </div>
         </div>
       </div>
@@ -422,13 +441,86 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">...</div>
+          <div
+            class="modal-body letter"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+            "
+          >
+            <h1>Reports</h1>
+            <label for="name"
+              >search by Name<input type="text" name="name" placeholder="Name"
+            /></label>
+            <label for="date"
+              >search by Date<input type="date" name="date"
+            /></label>
+            <label for="med"
+              >search by medicine<input type="text" name="med"
+            /></label>
+          </div>
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
+              class="my-btn-small"
+              data-toggle="modal"
+              data-target="#report"
             >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ! Modal report-->
+    <div
+      class="modal fade"
+      id="report"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">report</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h2>History</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam
+              delectus quis in possimus vero officia, ipsam quisquam magni nobis
+              reprehenderit quae, hic dignissimos. Reprehenderit nemo adipisci
+              qui enim necessitatibus!
+            </p>
+            <hr />
+            <h2>Prescription</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam
+              delectus quis in possimus.
+            </p>
+            <hr />
+            <h2>Suggestions</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam
+              delectus quis in possimus vero officia, ipsam quisquam magni nobis
+              reprehenderit quae, hic dignissimos. Reprehenderit nemo adipisci
+              qui enim necessitatibus! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Nam, harum.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
             </button>
           </div>
@@ -457,13 +549,25 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">...</div>
+          <div
+            class="modal-body letter"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+            "
+          >
+            <h1>Add docs</h1>
+            <hr />
+            <label for="patientName"
+              >Patient's name: <input type="text" name="patientName"
+            /></label>
+            <label for="addFile"
+              >Add file: <input type="file" name="addFile"
+            /></label>
+          </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
+            <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
             </button>
           </div>
