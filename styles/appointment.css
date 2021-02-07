@@ -118,6 +118,7 @@ body {
           transform: scale(0.8);
   -o-object-fit: contain;
      object-fit: contain;
+  cursor: pointer;
 }
 
 .slide-box {
