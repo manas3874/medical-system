@@ -38,7 +38,6 @@
     <!-- ! Dashboard nav -->
     <nav class="dashboard-navbar">
       <div class="dashboard-navbar__left">
-        <a href="/index.html">View appointments</a>
         <div class="dropdown">
           <button
             class="btn btn-secondary dropdown-toggle"
@@ -48,17 +47,24 @@
             aria-haspopup="true"
             aria-expanded="false"
           >
-            Add patient
+            Create invoice
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button addPatient -->
             <button
               type="button"
               class="btn btn-primary dropdown-item"
               data-toggle="modal"
-              data-target="#addPatient"
+              data-target="#patientInvoice"
             >
-              Add patient to program
+              Patient
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary dropdown-item"
+              data-toggle="modal"
+              data-target="#companyInvoice"
+            >
+              Company
             </button>
           </div>
         </div>
@@ -71,17 +77,17 @@
             aria-haspopup="true"
             aria-expanded="false"
           >
-            Add medicine
+            Register doctor
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button medicine -->
+            <!-- ! button addDoctor -->
             <button
               type="button"
               class="btn btn-primary dropdown-item"
               data-toggle="modal"
-              data-target="#medicine"
+              data-target="#addDoctor"
             >
-              Add medicine
+              Add doctor to program
             </button>
           </div>
         </div>
@@ -94,86 +100,17 @@
             aria-haspopup="true"
             aria-expanded="false"
           >
-            letters
+            Register nurse
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button letters -->
+            <!-- ! button addNurse -->
             <button
               type="button"
               class="btn btn-primary dropdown-item"
               data-toggle="modal"
-              data-target="#letters"
+              data-target="#addNurse"
             >
-              letters
-            </button>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            reportsAndAudits
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button reportsAndAudits -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#reportsAndAudits"
-            >
-              reportsAndAudits
-            </button>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            docs
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button docs -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#docs"
-            >
-              docs
-            </button>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            profile
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <!-- ! button profile -->
-            <button
-              type="button"
-              class="btn btn-primary dropdown-item"
-              data-toggle="modal"
-              data-target="#editProfile"
-            >
-              profile
+              Add nurse to program
             </button>
           </div>
         </div>
@@ -183,174 +120,10 @@
       </div>
     </nav>
 
-    <!-- ! Modal addPatient-->
+    <!-- ! Modal patientInvoice-->
     <div
       class="modal fade"
-      id="addPatient"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">addPatient</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button type="button" class="my-btn-small" data-dismiss="modal">
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ! Modal medicine-->
-    <div
-      class="modal fade"
-      id="medicine"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">medicine</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button type="button" class="my-btn-small" data-dismiss="modal">
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ! Modal editProfile-->
-    <div
-      class="modal fade"
-      id="editProfile"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">editProfile</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Name" />
-              </div>
-              <div class="form-group">
-                <input type="number" class="form-control" placeholder="age" />
-              </div>
-              <div class="form-group">
-                <input
-                  type="tel"
-                  class="form-control"
-                  placeholder="Phone number"
-                />
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="email" />
-              </div>
-              <div class="form-group">
-                <select name="gender" class="form-control" id="">
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="password"
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="verify password"
-                />
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="my-btn-small" data-dismiss="modal">
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ! Modal letters-->
-    <div
-      class="modal fade"
-      id="letters"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">letters</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button type="button" class="my-btn-small" data-dismiss="modal">
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ! Modal reportsAndAudits-->
-    <div
-      class="modal fade"
-      id="reportsAndAudits"
+      id="patientInvoice"
       tabindex="-1"
       role="dialog"
       aria-labelledby="exampleModalCenterTitle"
@@ -360,7 +133,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLongTitle">
-              reportsAndAudits
+              patientInvoice
             </h5>
             <button
               type="button"
@@ -371,206 +144,35 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button type="button" class="my-btn-small" data-dismiss="modal">
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ! Modal docs-->
-    <div
-      class="modal fade"
-      id="docs"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">docs</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button type="button" class="my-btn-small" data-dismiss="modal">
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ! Modal editAppointment-->
-    <div
-      class="modal fade"
-      id="editAppointment"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">
-              editAppointment
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <!-- ! appointment booking -->
-            <div class="appointment-wrapper">
-              <h1 class="appointment__header">Edit an appointment</h1>
-              <div class="appointment__card">
-                <h2 class="appointment__card--header">Choose a Doctor</h2>
-                <!-- ! carousel -->
-                <!--Carousel Wrapper-->
-                <div
-                  id="multi-item-example"
-                  class="carousel slide carousel-multi-item"
-                  data-ride="carousel"
-                >
-                  <!--Controls-->
-                  <div
-                    class="controls-top"
-                    style="
-                      display: flex;
-                      align-items: center;
-                      justify-content: space-between;
-                    "
-                  >
-                    <a
-                      class="btn-floating"
-                      href="#multi-item-example"
-                      data-slide="prev"
-                      ><i class="fa fa-chevron-left fa-3x"></i
-                    ></a>
-                    <a
-                      class="btn-floating"
-                      href="#multi-item-example"
-                      data-slide="next"
-                      ><i class="fa fa-chevron-right fa-3x"></i
-                    ></a>
-                  </div>
-                  <!--/.Controls-->
-
-                  <!--Indicators-->
-                  <ol class="carousel-indicators">
-                    <li
-                      data-target="#multi-item-example"
-                      data-slide-to="0"
-                      class="active"
-                    ></li>
-                    <li
-                      data-target="#multi-item-example"
-                      data-slide-to="1"
-                    ></li>
-                  </ol>
-                  <!--/.Indicators-->
-
-                  <!--Slides-->
-                  <div class="carousel-inner" role="listbox">
-                    <!--First slide-->
-                    <div class="carousel-item active">
-                      <div class="row">
-                        <div class="col-md-4">
-                          <div class="card mb-2">
-                            <div class="card-body">
-                              <img src="../assets/ceo.jpg" alt="" />
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4 clearfix d-none d-md-block">
-                          <div class="card mb-2">
-                            <div class="card-body">
-                              <img src="../assets/ceo.jpg" alt="" />
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4 clearfix d-none d-md-block">
-                          <div class="card mb-2">
-                            <div class="card-body">
-                              <img src="../assets/ceo.jpg" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--/.First slide-->
-
-                    <!--Second slide-->
-                    <div class="carousel-item">
-                      <div class="row">
-                        <div class="col-md-4">
-                          <div class="card mb-2">
-                            <div class="card-body">
-                              <img src="../assets/ceo.jpg" alt="" />
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4 clearfix d-none d-md-block">
-                          <div class="card mb-2">
-                            <div class="card-body">
-                              <img src="../assets/ceo.jpg" alt="" />
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4 clearfix d-none d-md-block">
-                          <div class="card mb-2">
-                            <div class="card-body">
-                              <img src="../assets/ceo.jpg" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--/.Second slide-->
-                  </div>
-                  <!--/.Slides-->
-                </div>
-                <!--/.Carousel Wrapper-->
-                <form>
-                  <label for="day"
-                    >Select a Day
-                    <input type="date" name="day" />
-                  </label>
-                  <label for="time"
-                    >Select a Time <input type="time" name="time"
-                  /></label>
-                  <label for="notes"
-                    >Notes
-                    <input
-                      type="text"
-                      name="notes"
-                      placeholder="additional information"
-                  /></label>
-                </form>
-                <div>
-                  <button>Update</button>
-                  <button>Delete</button>
-                </div>
+          <div
+            class="modal-body letter"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+            "
+          >
+            <h1>Create patient invoice</h1>
+            <hr />
+            <label for="patientName"
+              >Search patient Name: <input type="text" name="patientName"
+            /></label>
+            <hr />
+            <div class="upcoming">
+              <div class="columns">
+                <h1>Name</h1>
+                <h2>John Doe</h2>
+                <h2>John Doe</h2>
+              </div>
+              <div class="columns">
+                <h1>Amount</h1>
+                <h2>$400</h2>
+                <h2>$900</h2>
+              </div>
+              <div class="columns">
+                <h1>Send</h1>
+                <button>Send</button>
+                <button>Send</button>
               </div>
             </div>
           </div>
@@ -578,56 +180,217 @@
             <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
             </button>
+            <hr />
+            <button type="button" class="my-btn-small">Create</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ! Modal companyInvoice-->
+    <div
+      class="modal fade"
+      id="companyInvoice"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              companyInvoice
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div
+            class="modal-body letter"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+            "
+          >
+            <h1>Create company invoice</h1>
+            <hr />
+            <label for="patientName"
+              >Search company Name: <input type="text" name="patientName"
+            /></label>
+            <hr />
+            <div class="upcoming">
+              <div class="columns">
+                <h1>Name</h1>
+                <h2>John Doe Inc.</h2>
+                <h2>John Doe Corp.</h2>
+              </div>
+              <div class="columns">
+                <h1>Amount</h1>
+                <h2>$400</h2>
+                <h2>$900</h2>
+              </div>
+              <div class="columns">
+                <h1>Send</h1>
+                <button>Send</button>
+                <button>Send</button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="my-btn-small" data-dismiss="modal">
+              Close
+            </button>
+            <hr />
+            <button type="button" class="my-btn-small">Create</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ! Modal addDoctor-->
+    <div
+      class="modal fade"
+      id="addDoctor"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">addDoctor</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div
+            class="modal-body letter"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+            "
+          >
+            <h1>Add a Doctor</h1>
+            <hr />
+            <label for="medName"
+              >Doctor Name: <input type="text" name="medName"
+            /></label>
+            <label for="medName"
+              >Doctor email: <input type="email" name="medName"
+            /></label>
+            <label for="medName"
+              >Doctor age: <input type="number" name="medName"
+            /></label>
+            <label for="medName"
+              >Doctor address: <input type="text" name="medName"
+            /></label>
+            <label for="medName"
+              >Upload doctor documents: <input type="file" name="medName"
+            /></label>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="my-btn-small" data-dismiss="modal">
+              Close
+            </button>
+            <hr />
+            <button type="button" class="my-btn-small">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ! Modal addNurse-->
+    <div
+      class="modal fade"
+      id="addNurse"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">addNurse</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div
+            class="modal-body letter"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+            "
+          >
+            <h1>Add a Nurse</h1>
+            <hr />
+            <label for="medName"
+              >Nurse Name: <input type="text" name="medName"
+            /></label>
+            <label for="medName"
+              >Nurse email: <input type="email" name="medName"
+            /></label>
+            <label for="medName"
+              >Nurse age: <input type="number" name="medName"
+            /></label>
+            <label for="medName"
+              >Nurse address: <input type="text" name="medName"
+            /></label>
+            <label for="medName"
+              >Upload nurse documents: <input type="file" name="medName"
+            /></label>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="my-btn-small" data-dismiss="modal">
+              Close
+            </button>
+            <hr />
+            <button type="button" class="my-btn-small">Submit</button>
           </div>
         </div>
       </div>
     </div>
     <!-- ! Dashboard content -->
     <div class="dashboard-content">
-      <h1>Upcoming appointments</h1>
+      <h1>Invoices not paid</h1>
       <div class="upcoming">
+        <div class="columns">
+          <h1>Name</h1>
+          <h2>John Doe</h2>
+          <h2>John Doe</h2>
+        </div>
         <div class="columns">
           <h1>Date</h1>
           <h2>20-10-2020</h2>
           <h2>20-10-2020</h2>
         </div>
         <div class="columns">
-          <h1>Time</h1>
-          <h2>05:00 PM</h2>
-          <h2>06:00 PM</h2>
+          <h1>Send</h1>
+          <button>Send</button>
+          <button>Send</button>
         </div>
         <div class="columns">
-          <h1>Doctor</h1>
-          <h2>Dr. C</h2>
-          <h2>Dr. D</h2>
-        </div>
-        <div class="columns">
-          <h1>Action</h1>
-          <button>Edit</button>
-          <button>Edit</button>
-        </div>
-      </div>
-      <h1>Upcoming Programs</h1>
-      <div class="upcoming">
-        <div class="columns">
-          <h1>Date</h1>
-          <h2>20-10-2020</h2>
-          <h2>20-10-2020</h2>
-        </div>
-        <div class="columns">
-          <h1>Time</h1>
-          <h2>05:00 PM</h2>
-          <h2>06:00 PM</h2>
-        </div>
-        <div class="columns">
-          <h1>Doctor</h1>
-          <h2>Dr. C</h2>
-          <h2>Dr. D</h2>
-        </div>
-        <div class="columns">
-          <h1>Action</h1>
-          <button>Edit</button>
-          <button>Edit</button>
+          <h1>Amount</h1>
+          <h2>$400</h2>
+          <h2>$900</h2>
         </div>
       </div>
     </div>
