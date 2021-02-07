@@ -14,6 +14,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 5rem 3rem;
+  }
+}
+
 .footer > h1 {
   font-size: 4rem;
   color: #fff;
@@ -37,7 +43,7 @@
   font-size: 2rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .footer > div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

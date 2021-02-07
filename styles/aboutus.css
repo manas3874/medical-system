@@ -35,7 +35,7 @@
 }
 
 .aboutus-vision {
-  background: url("../assets/aboutus-vision.jpg") center center/cover no-repeat;
+  background: url("../assets/aboutus-vision.jpg") center right/cover no-repeat;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,5 +66,37 @@
   list-style: none;
   padding-left: 3rem;
   font-size: 3rem;
+}
+
+@media screen and (max-width: 900px) {
+  .aboutus-vision__list {
+    padding-left: 7rem;
+  }
+  .aboutus-vision__list h1 {
+    font-size: 4rem;
+    color: cadetblue;
+    margin-bottom: 3rem;
+  }
+  .aboutus-vision__list--item {
+    list-style: none;
+    padding-left: 3rem;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutus-vision__list {
+    padding-left: 4rem;
+  }
+  .aboutus-vision__list h1 {
+    font-size: 2rem;
+    color: cadetblue;
+    margin-bottom: 3rem;
+  }
+  .aboutus-vision__list--item {
+    list-style: none;
+    padding-left: 3rem;
+    font-size: 1.6rem;
+  }
 }
 /*# sourceMappingURL=aboutus.css.map */

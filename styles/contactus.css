@@ -24,6 +24,7 @@
 .contactus__content {
   font-size: 3rem;
   color: #57cecece;
+  padding: 0 2rem;
 }
 
 .contactus form {
@@ -58,6 +59,18 @@
 
 .contactus form input::placeholder {
   font-size: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .contactus form input {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contactus form input {
+    width: 30rem;
+  }
 }
 
 .contactus form textarea {

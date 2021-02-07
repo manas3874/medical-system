@@ -10,7 +10,7 @@
 
   &__header {
     font-size: 3rem;
-    margin-top: 2rem;
+    padding: 2rem 0;
   }
   &__card {
     display: flex;
@@ -19,7 +19,7 @@
     background-color: #575757;
     width: 60%;
     margin: auto;
-    padding: 2rem 0;
+
     &--header {
       color: #fff;
       font-size: 3rem;
@@ -44,19 +44,78 @@
           font-size: 2rem;
           cursor: pointer;
         }
+        @media screen and(max-width:450px) {
+          input,
+          select {
+            width: 30rem;
+            height: 3rem;
+            font-size: 1.7rem;
+            cursor: pointer;
+          }
+        }
       }
     }
-    button {
-      cursor: pointer;
-      color: #fff;
-      font-size: 2rem;
-      margin-top: 1rem;
-      background-color: #57cecece;
-      padding: 1rem 3rem;
-      margin: 1rem 0;
-      border: none;
-      outline: none;
-      border-radius: 10rem;
+    //
+    @media screen and(max-width:600px) {
+      width: 90%;
     }
   }
+}
+body {
+  background-color: rgb(206, 206, 206);
+}
+.carousel {
+  width: 100%;
+
+  img {
+    border-radius: 50rem;
+    width: 15rem !important;
+    margin: auto;
+    transform: scale(0.8);
+    object-fit: contain;
+  }
+}
+
+.slide-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    // max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+    // max-width: 33.3333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .slide-box img {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    // max-width: 25%;
+  }
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 0.5rem;
+}
+.carousel-indicators {
+  bottom: -2rem !important;
+}
+.carousel-control-next-icon {
+  transform: translateX(6rem);
+}
+.carousel-control-prev-icon {
+  transform: translateX(-6rem);
 }

@@ -24,7 +24,7 @@
 }
 
 .aboutus-vision {
-  background: url("../assets/aboutus-vision.jpg") center center/cover no-repeat;
+  background: url("../assets/aboutus-vision.jpg") center right/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: flex-start;
@@ -41,6 +41,36 @@
       list-style: none;
       padding-left: 3rem;
       font-size: 3rem;
+    }
+  }
+  @media screen and(max-width:900px) {
+    &__list {
+      padding-left: 7rem;
+      h1 {
+        font-size: 4rem;
+        color: cadetblue;
+        margin-bottom: 3rem;
+      }
+      &--item {
+        list-style: none;
+        padding-left: 3rem;
+        font-size: 3rem;
+      }
+    }
+  }
+  @media screen and(max-width:600px) {
+    &__list {
+      padding-left: 4rem;
+      h1 {
+        font-size: 2rem;
+        color: cadetblue;
+        margin-bottom: 3rem;
+      }
+      &--item {
+        list-style: none;
+        padding-left: 3rem;
+        font-size: 1.6rem;
+      }
     }
   }
 }

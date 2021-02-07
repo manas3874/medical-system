@@ -41,7 +41,7 @@
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
           <ul class="navbar-right__list">
-            <li class="navbar-right__list--item-active">
+            <li class="navbar-right__list--item">
               <a href="/index.html">Home</a>
             </li>
             <li class="navbar-right__list--item">
@@ -50,7 +50,7 @@
             <li class="navbar-right__list--item">
               <a href="/contactus.html">Contact us</a>
             </li>
-            <li class="navbar-right__list--item">
+            <li class="navbar-right__list--item-active">
               <a href="/appointment.html">Book appointment</a>
             </li>
           </ul>
@@ -84,108 +84,99 @@
       <h1 class="appointment__header">Book an appointment</h1>
       <div class="appointment__card">
         <h2 class="appointment__card--header">Choose a Doctor</h2>
-        <!-- ! carousel -->
-        <!--Carousel Wrapper-->
-        <div
-          id="multi-item-example"
-          class="carousel slide carousel-multi-item"
-          data-ride="carousel"
-        >
-          <!--Controls-->
-          <div
-            class="controls-top"
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-            "
-          >
-            <a class="btn-floating" href="#multi-item-example" data-slide="prev"
-              ><i class="fa fa-chevron-left fa-3x"></i
-            ></a>
-            <a class="btn-floating" href="#multi-item-example" data-slide="next"
-              ><i class="fa fa-chevron-right fa-3x"></i
-            ></a>
-          </div>
-          <!--/.Controls-->
-
-          <!--Indicators-->
-          <ol class="carousel-indicators">
-            <li
-              data-target="#multi-item-example"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#multi-item-example" data-slide-to="1"></li>
-          </ol>
-          <!--/.Indicators-->
-
-          <!--Slides-->
-          <div class="carousel-inner" role="listbox">
-            <!--First slide-->
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card mb-2">
-                    <div class="card-body">
-                      <img src="../assets/ceo.jpg" alt="" />
+        <div class="container">
+          <div class="row">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-none d-lg-block">
+                    <div class="slide-box">
+                      <img src="./assets/ceo.jpg" alt="First slide" />
+                      <img src="./assets/ceo.jpg" alt="First slide" />
+                      <img src="./assets/ceo.jpg" alt="First slide" />
+                      <img src="./assets/ceo.jpg" alt="First slide" />
                     </div>
                   </div>
-                </div>
-
-                <div class="col-md-4 clearfix d-none d-md-block">
-                  <div class="card mb-2">
-                    <div class="card-body">
-                      <img src="../assets/ceo.jpg" alt="" />
+                  <div class="d-none d-md-block d-lg-none">
+                    <div class="slide-box">
+                      <img src="./assets/ceo.jpg" alt="First slide" />
+                      <img src="./assets/ceo.jpg" alt="First slide" />
+                      <img src="./assets/ceo.jpg" alt="First slide" />
                     </div>
                   </div>
-                </div>
-
-                <div class="col-md-4 clearfix d-none d-md-block">
-                  <div class="card mb-2">
-                    <div class="card-body">
-                      <img src="../assets/ceo.jpg" alt="" />
+                  <div class="d-none d-sm-block d-md-none">
+                    <div class="slide-box">
+                      <img src="./assets/ceo.jpg" alt="First slide" />
+                      <img src="./assets/ceo.jpg" alt="First slide" />
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <!--/.First slide-->
-
-            <!--Second slide-->
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card mb-2">
-                    <div class="card-body">
-                      <img src="../assets/ceo.jpg" alt="" />
-                    </div>
+                  <div class="d-flex d-sm-none">
+                    <img src="./assets/ceo.jpg" alt="First slide" />
                   </div>
                 </div>
-
-                <div class="col-md-4 clearfix d-none d-md-block">
-                  <div class="card mb-2">
-                    <div class="card-body">
-                      <img src="../assets/ceo.jpg" alt="" />
+                <div class="carousel-item">
+                  <div class="d-none d-lg-block">
+                    <div class="slide-box">
+                      <img src="./assets/ceo.jpg" alt="Second slide" />
+                      <img src="./assets/ceo.jpg" alt="Second slide" />
+                      <img src="./assets/ceo.jpg" alt="Second slide" />
+                      <img src="./assets/ceo.jpg" alt="Second slide" />
                     </div>
                   </div>
-                </div>
-
-                <div class="col-md-4 clearfix d-none d-md-block">
-                  <div class="card mb-2">
-                    <div class="card-body">
-                      <img src="../assets/ceo.jpg" alt="" />
+                  <div class="d-none d-md-block d-lg-none">
+                    <div class="slide-box">
+                      <img src="./assets/ceo.jpg" alt="Second slide" />
+                      <img src="./assets/ceo.jpg" alt="Second slide" />
+                      <img src="./assets/ceo.jpg" alt="Second slide" />
                     </div>
+                  </div>
+                  <div class="d-none d-sm-block d-md-none">
+                    <div class="slide-box">
+                      <img src="./assets/ceo.jpg" alt="Second slide" />
+                      <img src="./assets/ceo.jpg" alt="Second slide" />
+                      <img src="./assets/ceo.jpg" alt="Second slide" />
+                    </div>
+                  </div>
+                  <div class="d-flex d-sm-none">
+                    <img src="./assets/ceo.jpg" alt="Second slide" />
                   </div>
                 </div>
               </div>
+              <a
+                class="carousel-control-prev"
+                href="#carousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carousel"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <!--/.Second slide-->
           </div>
-          <!--/.Slides-->
         </div>
-        <!--/.Carousel Wrapper-->
-
         <form>
           <label for="day"
             >Select a Day
@@ -202,7 +193,7 @@
               placeholder="additional information"
           /></label>
         </form>
-        <button>Book</button>
+        <button class="my-btn-small">Book</button>
       </div>
     </div>
     <!-- ! Footer -->
@@ -228,7 +219,7 @@
             </li>
           </ul>
         </div>
-       <div class="footer__nav-center">
+        <div class="footer__nav-center">
           <ul class="footer__nav-center--list">
             <li class="footer__nav-center--list-item">
               <a href="/doctor/dashboard.html">Doctor login</a>
@@ -251,6 +242,7 @@
         </div>
       </div>
     </footer>
+
     <!-- ! bootstrap js import-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

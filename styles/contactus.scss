@@ -12,6 +12,7 @@
   &__content {
     font-size: 3rem;
     color: #57cecece;
+    padding: 0 2rem;
   }
   form {
     display: flex;
@@ -24,6 +25,12 @@
       padding: 0 1rem;
       &::placeholder {
         font-size: 2rem;
+      }
+      @media screen and(max-width:800px) {
+        width: 40rem;
+      }
+      @media screen and(max-width:450px) {
+        width: 30rem;
       }
     }
     textarea {
