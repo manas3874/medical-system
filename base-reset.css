@@ -65,3 +65,15 @@ button.my-btn-small {
     outline: none;
     border-radius: 10rem;
 }
+
+button.my-btn-small--danger {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: auto;
+    background-color: #ff4343ce;
+    padding: 0.3rem 1.5rem;
+    margin: 1rem 0;
+    border: none;
+    outline: none;
+    border-radius: 10rem;}

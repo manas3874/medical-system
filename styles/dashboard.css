@@ -184,6 +184,12 @@
   padding: 3rem 0;
 }
 
+@media screen and (max-width: 600px) {
+  .nurse-miscellaneous-task * {
+    font-size: 1.5rem !important;
+  }
+}
+
 button.btn.btn-primary:hover, button.btn.btn-primary:active, button.btn.btn-primary:focus {
   background: transparent;
 }
