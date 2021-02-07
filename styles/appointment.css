@@ -163,13 +163,14 @@ body {
   bottom: -2rem !important;
 }
 
-.carousel-control-next-icon {
-  -webkit-transform: translateX(6rem);
-          transform: translateX(6rem);
-}
-
-.carousel-control-prev-icon {
-  -webkit-transform: translateX(-6rem);
-          transform: translateX(-6rem);
+@media screen and (min-width: 500px) {
+  .carousel-control-next-icon {
+    -webkit-transform: translateX(6rem);
+            transform: translateX(6rem);
+  }
+  .carousel-control-prev-icon {
+    -webkit-transform: translateX(-6rem);
+            transform: translateX(-6rem);
+  }
 }
 /*# sourceMappingURL=appointment.css.map */

@@ -76,6 +76,7 @@
                   class="btn btn-primary dropdown-item"
                   data-toggle="modal"
                   data-target="#viewTask"
+                  style="background-color: #57cecece; text-align: center"
                 >
                   View task
                 </button>
@@ -214,7 +215,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <h1>Add task</h1>
+            <h1>View task</h1>
             <hr />
             <h3>Date: 20-2-2021</h3>
             <hr />
@@ -307,7 +308,9 @@
             <button type="button" class="my-btn-small" data-dismiss="modal">
               Close
             </button>
-            <button type="button" class="btn btn-primary">Search</button>
+            <hr />
+
+            <button type="button" class="my-btn-small">Search</button>
           </div>
         </div>
       </div>
@@ -870,8 +873,24 @@
       </div>
       <div class="columns" style="display: flex; flex-direction: column">
         <h1>Action</h1>
-        <button class="btn btn-primary">View</button>
-        <button class="btn btn-primary">View</button>
+        <button
+          type="button"
+          class="btn btn-primary dropdown-item"
+          data-toggle="modal"
+          data-target="#viewTask"
+          style="background-color: #57cecece; text-align: center"
+        >
+          View task
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary dropdown-item"
+          data-toggle="modal"
+          data-target="#viewTask"
+          style="background-color: #57cecece; text-align: center"
+        >
+          View task
+        </button>
       </div>
     </div>
     <!-- ! bootstrap js import-->

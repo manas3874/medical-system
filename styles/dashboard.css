@@ -190,6 +190,10 @@
   }
 }
 
+.nurse-miscellaneous-task .columns * {
+  margin: 1rem 0;
+}
+
 button.btn.btn-primary:hover, button.btn.btn-primary:active, button.btn.btn-primary:focus {
   background: transparent;
 }

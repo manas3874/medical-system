@@ -36,6 +36,9 @@
       outline: none;
       border-radius: 10rem;
     }
+    @media screen and(max-width:600px) {
+      width: 80%;
+    }
   }
   &__signup {
     margin-top: 3rem;

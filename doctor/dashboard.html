@@ -247,7 +247,58 @@
         </button>
       </nav>
     </div>
-
+    <div
+      class="modal fade"
+      id="editAppointments"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              editAppointments
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="upcoming">
+              <div class="columns">
+                <h1>Date</h1>
+                <h2>20-10-2020</h2>
+                <h2>20-10-2020</h2>
+              </div>
+              <div class="columns">
+                <h1>Time</h1>
+                <h2>05:00 PM</h2>
+                <h2>06:00 PM</h2>
+              </div>
+              <div class="columns">
+                <h1>Doctor</h1>
+                <h2>Dr. C</h2>
+                <h2>Dr. D</h2>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="my-btn-small" data-dismiss="modal">
+              Close
+            </button>
+            <hr />
+            <button type="button" class="my-btn-small">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- ! Modal addPatient-->
     <div
       class="modal fade"
@@ -630,8 +681,24 @@
         </div>
         <div class="columns">
           <h1>Action</h1>
-          <button>Edit</button>
-          <button>Edit</button>
+          <button
+            type="button"
+            class="btn btn-primary dropdown-item"
+            data-toggle="modal"
+            data-target="#editAppointments"
+            style="background-color: #57cecece; text-align: center"
+          >
+            Edit
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary dropdown-item"
+            data-toggle="modal"
+            data-target="#editAppointments"
+            style="background-color: #57cecece; text-align: center"
+          >
+            Edit
+          </button>
         </div>
       </div>
     </div>

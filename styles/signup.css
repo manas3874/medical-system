@@ -28,6 +28,12 @@
           align-items: center;
 }
 
+@media screen and (max-width: 600px) {
+  .signup > form {
+    width: 80%;
+  }
+}
+
 .signup > form .form-group input,
 .signup > form .form-group select {
   width: 100%;

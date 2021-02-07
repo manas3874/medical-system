@@ -113,9 +113,12 @@ body {
 .carousel-indicators {
   bottom: -2rem !important;
 }
-.carousel-control-next-icon {
-  transform: translateX(6rem);
-}
-.carousel-control-prev-icon {
-  transform: translateX(-6rem);
+
+@media screen and(min-width:500px) {
+  .carousel-control-next-icon {
+    transform: translateX(6rem);
+  }
+  .carousel-control-prev-icon {
+    transform: translateX(-6rem);
+  }
 }

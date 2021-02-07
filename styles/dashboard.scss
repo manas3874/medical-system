@@ -138,6 +138,11 @@
       font-size: 1.5rem !important;
     }
   }
+  .columns {
+    * {
+      margin: 1rem 0;
+    }
+  }
 }
 button.btn.btn-primary {
   &:hover,

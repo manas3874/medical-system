@@ -57,6 +57,12 @@
   border-radius: 10rem;
 }
 
+@media screen and (max-width: 600px) {
+  .login > form {
+    width: 80%;
+  }
+}
+
 .login__signup {
   margin-top: 3rem;
 }
