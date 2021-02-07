@@ -30,11 +30,52 @@
     <title>medical system | Home</title>
   </head>
   <body>
-    <!-- ! Navbar -->
-    <nav class="navbar">
-      <div class="navbar-left">
-        <h2 class="navbar-left__logo">Appointment +</h2>
+    <!-- ! bootstrap navbar -->
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <ul class="navbar-right__list">
+            <li class="navbar-right__list--item-active">
+              <a href="/index.html">Home</a>
+            </li>
+            <li class="navbar-right__list--item">
+              <a href="/aboutus.html">About us</a>
+            </li>
+            <li class="navbar-right__list--item">
+              <a href="/contactus.html">Contact us</a>
+            </li>
+            <li class="navbar-right__list--item">
+              <a href="/appointment.html">Book appointment</a>
+            </li>
+          </ul>
+        </div>
       </div>
+      <nav
+        class="navbar navbar-dark"
+        style="position: relative; background-color: #57cecece"
+      >
+        <h2 class="navbar-left__logo">Appointment +</h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="position: absolute; right: 3rem"
+        >
+          <img
+            src="./assets/hamburger.png"
+            alt="menu-icon"
+            style="width: 3rem"
+          />
+        </button>
+      </nav>
+    </div>
+    <!-- ! Navbar -->
+    <!-- <nav class="navbar">
+      <div class="navbar-left"></div>
       <div class="navbar-right">
         <ul class="navbar-right__list">
           <li class="navbar-right__list--item-active">
@@ -51,7 +92,7 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
     <!-- ! Banner -->
     <section class="homepage-banner">
       <h2 class="homepage-banner__header">

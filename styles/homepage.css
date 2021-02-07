@@ -3,12 +3,54 @@
   background: url("../assets/doctor-bg-min.jpg") top center/cover;
 }
 
+@media screen and (max-width: 600px) {
+  .homepage-banner {
+    background: url("../assets/mobile-banner.jpg") top center/cover;
+    position: relative;
+  }
+  .homepage-banner::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 26, 18, 0.6)), color-stop(20%, rgba(13, 13, 13, 0)), color-stop(rgba(22, 17, 15, 0)), color-stop(rgba(44, 26, 18, 0.4)), color-stop(74%, rgba(44, 26, 18, 0.69)), to(rgba(44, 26, 18, 0.73)));
+    background-image: linear-gradient(rgba(43, 26, 18, 0.6), rgba(13, 13, 13, 0) 20%, rgba(22, 17, 15, 0), rgba(44, 26, 18, 0.4), rgba(44, 26, 18, 0.69) 74%, rgba(44, 26, 18, 0.73));
+  }
+}
+
 .homepage-banner__header {
   font-size: 5.5rem;
   margin: 0rem 0 10rem 0;
   padding-top: 8rem;
   text-align: center;
   width: 60%;
+}
+
+@media screen and (max-width: 1200px) {
+  .homepage-banner__header {
+    margin: 0rem 0 4rem 0;
+    font-size: 4rem;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homepage-banner__header {
+    width: 100%;
+    color: #fff;
+    padding: 0;
+    font-size: 3rem;
+    position: absolute;
+    top: 1rem;
+  }
 }
 
 .homepage-banner__form {
@@ -42,12 +84,51 @@
   color: #fff;
 }
 
+@media screen and (max-width: 1200px) {
+  .homepage-banner__form label {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .homepage-banner__form label input,
 .homepage-banner__form label select {
   width: 25rem;
   height: 4.5rem;
   font-size: 2rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .homepage-banner__form label {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .homepage-banner__form label input,
+  .homepage-banner__form label select {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: 2.5rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homepage-banner__form {
+    width: 100%;
+    margin: 0;
+    padding: 0 3rem;
+    position: absolute;
+    bottom: 1rem;
+  }
 }
 
 .homepage-cards {
@@ -100,6 +181,18 @@
 .homepage-cards div .homepage-cards__card--img {
   margin: 3rem 0;
   width: 6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .homepage-cards div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homepage-cards div .homepage-cards__card {
+    margin-bottom: 2rem;
+  }
 }
 
 .homepage-cards__bottom-header {

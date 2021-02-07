@@ -14,10 +14,26 @@
       justify-content: space-between;
       &--item {
         font-size: 2rem;
+        * {
+          color: #57cece !important;
+        }
+
         cursor: pointer;
         &-active {
           font-size: 2rem;
-          border-bottom: 1px solid black;
+          border-bottom: 1px solid #57cece;
+          * {
+            color: #57cece !important;
+          }
+        }
+      }
+      @media screen and(max-width:600px) {
+        flex-direction: column;
+        &--item {
+          margin-bottom: 1rem;
+          &-active {
+            margin-bottom: 1rem;
+          }
         }
       }
     }

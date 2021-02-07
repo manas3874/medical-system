@@ -26,9 +26,32 @@
   cursor: pointer;
 }
 
+.navbar-right__list--item * {
+  color: #57cece !important;
+}
+
 .navbar-right__list--item-active {
   font-size: 2rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #57cece;
+}
+
+.navbar-right__list--item-active * {
+  color: #57cece !important;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-right__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-right__list--item {
+    margin-bottom: 1rem;
+  }
+  .navbar-right__list--item-active {
+    margin-bottom: 1rem;
+  }
 }
 
 .navbar-login__logo {
