@@ -58,18 +58,5 @@
       outline: none;
       border-radius: 10rem;
     }
-    .carousel.slide {
-      width: 100%;
-
-      .carousel-item,
-      .active {
-        display: flex;
-        img {
-          margin: auto;
-          width: 10rem;
-          border-radius: 20rem;
-        }
-      }
-    }
   }
 }

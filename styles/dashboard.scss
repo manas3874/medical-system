@@ -109,3 +109,15 @@
     }
   }
 }
+.nurse-miscellaneous-task {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80%;
+  margin: 0 auto 15rem auto;
+  justify-items: center;
+  border: 3px solid #57ececec;
+  padding: 3rem 0;
+ 
+  
+  
+}
