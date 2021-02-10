@@ -51,6 +51,12 @@
           flex-direction: column;
 }
 
+@media screen and (max-width: 1000px) {
+  .appointment-main {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .appointment-main {
     width: 90%;

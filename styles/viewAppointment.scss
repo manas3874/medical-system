@@ -24,6 +24,9 @@
     border: 5px solid #57cecece;
     display: flex;
     flex-direction: column;
+    @media screen and(max-width:1000px) {
+      width: 80%;
+    }
     @media screen and(max-width:600px) {
       width: 90%;
     }

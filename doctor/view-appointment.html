@@ -65,29 +65,379 @@
 
       <textarea cols="30" rows="10" placeholder="Notes"></textarea>
       <textarea cols="30" rows="10" placeholder="Prescription"></textarea>
-      <div class="selects">
-        <label for="medicines"
-          >Add medicines<select name="medicines">
-            <option value="paracetamol">Paracetamol</option>
-            <option value="combiflam">combiflam</option>
-            <option value="paracetamol">Paracetamol</option>
-            <option value="paracetamol">Paracetamol</option>
-          </select></label
+      <h1 style="text-align: center">Prescribe medicines</h1>
+      <div class="top" style="display: flex; justify-content: space-evenly">
+        <label
+          for="prescribe"
+          style="display: flex; flex-direction: column; align-items: center"
+          >Prescribe
+          <!-- ! Button viewPrescriptionModal -->
+          <button
+            type="button"
+            class="my-btn-small"
+            data-toggle="modal"
+            data-target="#viewPrescriptionModal"
+          >
+            View
+          </button> </label
+        ><label
+          for="medicines"
+          style="display: flex; flex-direction: column; align-items: center"
+          >Medicine
+          <!-- ! Button addMedicineModal -->
+          <button
+            type="button"
+            class="my-btn-small"
+            data-toggle="modal"
+            data-target="#addMedicineModal"
+          >
+            Add
+          </button></label
         >
-        <label for="program"
-          >Add to program<select name="program">
-            <option value="diabetes">3 week diabetes</option>
-            <option value="blood pressure">2 month blood-pressure</option>
-          </select></label
-        >
-        <label for="document"
-          >add document<input type="file" name="document"
-        /></label>
       </div>
+      <table class="table table-sm" style="width: 40rem; margin: 3rem auto">
+        <thead>
+          <tr>
+            <th style="text-align: center" scope="col">Name</th>
+            <th style="text-align: center" scope="col">Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th style="text-align: center">Mark</th>
+            <th style="text-align: center" scope="row">1</th>
+          </tr>
+          <tr>
+            <th style="text-align: center">Jacob</th>
+            <th style="text-align: center" scope="row">2</th>
+          </tr>
+          <tr>
+            <th style="text-align: center">Larry the Bird</th>
+            <th style="text-align: center" scope="row">3</th>
+          </tr>
+        </tbody>
+      </table>
+      <h1 style="text-align: center">Add to program</h1>
+      <div class="top" style="display: flex; justify-content: space-evenly">
+        <label
+          for="prescribe"
+          style="display: flex; flex-direction: column; align-items: center"
+          ><!-- ! Button viewProgram -->
+          <button
+            type="button"
+            class="my-btn-small"
+            data-toggle="modal"
+            data-target="#viewProgram"
+          >
+            View
+          </button></label
+        ><label
+          for="medicines"
+          style="display: flex; flex-direction: column; align-items: center"
+          ><!-- ! Button addProgram -->
+          <button
+            type="button"
+            class="my-btn-small"
+            data-toggle="modal"
+            data-target="#addProgram"
+          >
+            Add
+          </button></label
+        >
+      </div>
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Program"
+      ></textarea>
+      <h1 style="text-align: center">Add document</h1>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.6rem;
+        "
+      >
+        <input type="file" name="document" class="file-input" />
+      </div>
+
       <button class="my-btn-small" style="width: 300px; margin: 2rem auto">
         Save details
       </button>
     </main>
+    <!-- ! Modal viewPrescriptionModal-->
+    <div
+      class="modal fade"
+      id="viewPrescriptionModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              viewPrescriptionModal
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h1>View prescriptions</h1>
+            <table
+              class="table table-sm"
+              style="width: 40rem; margin: 3rem auto"
+            >
+              <thead>
+                <tr>
+                  <th style="text-align: center" scope="col">Name</th>
+                  <th style="text-align: center" scope="col">Prescriptions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th style="text-align: center">Mark</th>
+                  <th style="text-align: center" scope="row">
+                    Lorem ipsum dolor sit amet.
+                  </th>
+                </tr>
+                <tr>
+                  <th style="text-align: center">Jacob</th>
+                  <th style="text-align: center" scope="row">
+                    Lorem ipsum dolor sit amet.
+                  </th>
+                </tr>
+                <tr>
+                  <th style="text-align: center">Larry the Bird</th>
+                  <th style="text-align: center" scope="row">
+                    Lorem ipsum dolor sit amet.
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="my-btn-small" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ! Modal addMedicineModal-->
+    <div
+      class="modal fade"
+      id="addMedicineModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              addMedicineModal
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h1>Add Medicine</h1>
+            <input
+              type="text"
+              name=""
+              placeholder="Medicine name"
+              id=""
+              style="height: 3rem; margin-right: 2rem"
+            />
+            <button class="my-btn-small">Add</button>
+            <table
+              class="table table-sm"
+              style="width: 40rem; margin: 3rem auto"
+            >
+              <thead>
+                <tr>
+                  <th style="text-align: center" scope="col">Name</th>
+                  <th style="text-align: center" scope="col">quantity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th style="text-align: center">Paracetamol</th>
+                  <th style="text-align: center" scope="row">3</th>
+                </tr>
+                <tr>
+                  <th style="text-align: center">Paracetamol</th>
+                  <th style="text-align: center" scope="row">3</th>
+                </tr>
+                <tr>
+                  <th style="text-align: center">Paracetamol</th>
+                  <th style="text-align: center" scope="row">3</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="my-btn-small" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ! Modal viewProgram-->
+    <div
+      class="modal fade"
+      id="viewProgram"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">viewProgram</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h1>View Programs</h1>
+            <table
+              class="table table-sm"
+              style="width: 40rem; margin: 3rem auto"
+            >
+              <thead>
+                <tr>
+                  <th style="text-align: center" scope="col">Name</th>
+                  <th style="text-align: center" scope="col">Programs</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th style="text-align: center">Mark</th>
+                  <th style="text-align: center" scope="row">
+                    Diabetes, 3 week
+                  </th>
+                </tr>
+                <tr>
+                  <th style="text-align: center">Jacob</th>
+                  <th style="text-align: center" scope="row">
+                    Diabetes, 3 week
+                  </th>
+                </tr>
+                <tr>
+                  <th style="text-align: center">Larry the Bird</th>
+                  <th style="text-align: center" scope="row">
+                    Diabetes, 3 week
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="my-btn-small" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ! Modal addProgram-->
+    <div
+      class="modal fade"
+      id="addProgram"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">addProgram</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h1>Add Program</h1>
+            <input
+              type="text"
+              name=""
+              placeholder="Program name"
+              id=""
+              style="height: 3rem; margin-right: 2rem"
+            />
+            <button class="my-btn-small">Add</button>
+            <table
+              class="table table-sm"
+              style="width: 40rem; margin: 3rem auto"
+            >
+              <thead>
+                <tr>
+                  <th style="text-align: center" scope="col">Name</th>
+                  <th style="text-align: center" scope="col">Program</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th style="text-align: center">Jacob</th>
+                  <th style="text-align: center" scope="row">
+                    Diabetes, 3 week
+                  </th>
+                </tr>
+                <tr>
+                  <th style="text-align: center">Jacob</th>
+                  <th style="text-align: center" scope="row">
+                    Diabetes, 3 week
+                  </th>
+                </tr>
+                <tr>
+                  <th style="text-align: center">Jacob</th>
+                  <th style="text-align: center" scope="row">
+                    Diabetes, 3 week
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="my-btn-small" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- ! Modal previousInfo-->
     <div
       class="modal fade"

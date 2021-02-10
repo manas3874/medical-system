@@ -61,10 +61,15 @@
       &-item {
         cursor: pointer;
         color: #fff;
-        background-color: #046161;
-        padding: 1rem 3rem;
+        // background-color: #046161;
+        // padding: 1rem 3rem;
         margin: 1rem 0;
-        border-radius: 10rem;
+        // border-radius: 10rem;
+        a {
+          &:hover {
+            color: inherit;
+          }
+        }
         @media screen and(max-width:600px) {
           padding: 0.5rem 1rem;
           width: max-content;

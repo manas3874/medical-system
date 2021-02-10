@@ -126,7 +126,9 @@
         class="navbar navbar-dark"
         style="position: relative; background-color: #57cecece; height: 10vh"
       >
-        <h2 class="navbar-left__logo"><a href="/index.html">Appointment +</a></h2>
+        <h2 class="navbar-left__logo">
+          <a href="/index.html">Appointment +</a>
+        </h2>
         <button
           class="navbar-toggler"
           type="button"
@@ -574,12 +576,21 @@
               display: flex;
               align-items: center;
               justify-content: space-between;
+              transform: translateY(25rem);
             "
           >
-            <a class="btn-floating" href="#multi-item-example" data-slide="prev"
+            <a
+              class="btn-floating"
+              href="#multi-item-example "
+              style="transform: translateX(-3rem)"
+              data-slide="prev"
               ><i class="fa fa-chevron-left fa-3x"></i
             ></a>
-            <a class="btn-floating" href="#multi-item-example" data-slide="next"
+            <a
+              class="btn-floating"
+              href="#multi-item-example"
+              style="transform: translateX(3rem)"
+              data-slide="next"
               ><i class="fa fa-chevron-right fa-3x"></i
             ></a>
           </div>
@@ -855,6 +866,9 @@
         <!--/.Carousel Wrapper-->
       </div>
     </div>
+    <h1 style="text-align: center; font-size: 3rem; margin-bottom: 2rem">
+      Miscellaneous tasks
+    </h1>
     <div class="nurse-miscellaneous-task">
       <div class="columns">
         <h1>Date</h1>

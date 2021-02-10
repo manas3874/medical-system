@@ -28,21 +28,27 @@
           align-items: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .signup > form {
     width: 80%;
   }
 }
 
+@media screen and (max-width: 450px) {
+  .signup > form {
+    width: 90%;
+  }
+}
+
 .signup > form .form-group input,
 .signup > form .form-group select {
-  width: 100%;
+  width: 30rem;
   height: 4.4rem;
   font-size: 2rem !important;
 }
 
 .signup > form .form-group textarea {
-  width: 100%;
+  width: 30rem;
 }
 
 .signup > form button {

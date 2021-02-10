@@ -197,4 +197,23 @@
 button.btn.btn-primary:hover, button.btn.btn-primary:active, button.btn.btn-primary:focus {
   background: transparent;
 }
+
+.file-input {
+  -webkit-transform: translateX(6rem);
+          transform: translateX(6rem);
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 450px) {
+  .file-input {
+    -webkit-transform: translateX(5rem);
+            transform: translateX(5rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .table.table-sm {
+    width: 100% !important;
+  }
+}
 /*# sourceMappingURL=dashboard.css.map */

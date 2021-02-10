@@ -76,4 +76,18 @@ button.my-btn-small--danger {
     margin: 1rem 0;
     border: none;
     outline: none;
-    border-radius: 10rem;}
+    border-radius: 10rem;
+}
+
+/* ! Removing the arrows on number input */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}

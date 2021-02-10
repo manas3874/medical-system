@@ -151,3 +151,24 @@ button.btn.btn-primary {
     background: transparent;
   }
 }
+
+.file-input {
+  transform: translateX(6rem);
+  margin: 2rem 0;
+  // @media screen and (max-width: 750px) {
+  //   transform: translateX(3rem);
+  // }
+  // @media screen and (max-width: 600px) {
+  //   transform: translateX(6rem);
+  // }
+  @media screen and (max-width: 450px) {
+    transform: translateX(5rem);
+  }
+}
+
+.table.table-sm {
+  
+  @media screen and (max-width: 600px) {
+    width: 100% !important;
+  }
+}

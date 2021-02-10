@@ -60,24 +60,29 @@
                 View appointment
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a
-                  href="/doctor/view-appointment.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >View appointment 1</a
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#editAppointments"
                 >
-                <a
-                  href="/doctor/view-appointment.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >View appointment 2</a
+                  Edit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#editAppointments"
                 >
-                <a
-                  href="/doctor/view-appointment.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >View appointment 3</a
+                  Edit</button
+                ><button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#editAppointments"
                 >
+                  Edit
+                </button>
               </div>
             </li>
             <li class="dropdown">
@@ -228,7 +233,9 @@
         class="navbar navbar-dark"
         style="position: relative; background-color: #57cecece; height: 10vh"
       >
-        <h2 class="navbar-left__logo"><a href="/index.html">Appointment +</a></h2>
+        <h2 class="navbar-left__logo">
+          <a href="/index.html">Appointment +</a>
+        </h2>
         <button
           class="navbar-toggler"
           type="button"
@@ -581,28 +588,36 @@
             </button>
           </div>
           <div class="modal-body">
-            <h2>History</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam
-              delectus quis in possimus vero officia, ipsam quisquam magni nobis
-              reprehenderit quae, hic dignissimos. Reprehenderit nemo adipisci
-              qui enim necessitatibus!
-            </p>
-            <hr />
-            <h2>Prescription</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam
-              delectus quis in possimus.
-            </p>
-            <hr />
-            <h2>Suggestions</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam
-              delectus quis in possimus vero officia, ipsam quisquam magni nobis
-              reprehenderit quae, hic dignissimos. Reprehenderit nemo adipisci
-              qui enim necessitatibus! Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Nam, harum.
-            </p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Investigation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Mark</th>
+                  <td>10:00 AM</td>
+                  <td>12/02/2021</td>
+                  <td>Investigation</td>
+                </tr>
+                <tr>
+                  <th scope="row">Jacob</th>
+                  <td>12:00 PM</td>
+                  <td>12/02/2021</td>
+                  <td>Investigation</td>
+                </tr>
+                <tr>
+                  <th scope="row">Larry</th>
+                  <td>03:00 PM</td>
+                  <td>12/02/2021</td>
+                  <td>Investigation</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div class="modal-footer">
             <button type="button" class="my-btn-small" data-dismiss="modal">
@@ -681,24 +696,32 @@
         </div>
         <div class="columns">
           <h1>Action</h1>
-          <button
-            type="button"
-            class="btn btn-primary dropdown-item"
-            data-toggle="modal"
-            data-target="#editAppointments"
-            style="background-color: #57cecece; text-align: center"
+          <a
+            href="/doctor/view-appointment.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="
+              background-color: #57cecece;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+            >Edit</a
           >
-            Edit
-          </button>
-          <button
-            type="button"
-            class="btn btn-primary dropdown-item"
-            data-toggle="modal"
-            data-target="#editAppointments"
-            style="background-color: #57cecece; text-align: center"
+          <a
+            href="/doctor/view-appointment.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="
+              background-color: #57cecece;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+            >Edit</a
           >
-            Edit
-          </button>
         </div>
       </div>
     </div>

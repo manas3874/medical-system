@@ -11,6 +11,7 @@
   &__header {
     font-size: 3rem;
     padding: 2rem 0;
+    margin-top: 2rem;
   }
   &__card {
     display: flex;
@@ -66,7 +67,24 @@ body {
 }
 .carousel {
   width: 100%;
-
+  h2 {
+    text-align: center;
+  }
+  input[type="radio"] {
+    height: 10rem;
+    width: 10rem;
+    margin: 3rem auto;
+    position: relative;
+    &::before {
+      cursor: pointer;
+      content: "";
+      height: 10rem;
+      width: 10rem;
+      background: url("../assets/ceo.jpg") center center/cover no-repeat;
+      border-radius: 20rem;
+      position: absolute;
+    }
+  }
   img {
     border-radius: 50rem;
     width: 15rem !important;
@@ -79,7 +97,7 @@ body {
 
 .slide-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -112,7 +130,7 @@ body {
   border-radius: 0.5rem;
 }
 .carousel-indicators {
-  bottom: -2rem !important;
+  bottom: -3rem !important;
 }
 
 @media screen and(min-width:500px) {
