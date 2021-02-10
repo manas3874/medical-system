@@ -28,14 +28,57 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../base-reset.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
     <link rel="stylesheet" href="../styles/dashboard.css" />
     <link rel="stylesheet" href="../styles/viewAppointment.css" />
     <title>medical system | Appointments</title>
   </head>
   <body>
-    <nav class="appointment-navbar">
-      <a href="/index.html"><h1>Appointment +</h1></a>
-    </nav>
+    <!-- ! bootstrap navbar -->
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <ul class="navbar-right__list">
+            <li class="navbar-right__list--item">
+              <a href="/index.html">Home</a>
+            </li>
+            <li class="navbar-right__list--item">
+              <a href="/aboutus.html">About us</a>
+            </li>
+            <li class="navbar-right__list--item">
+              <a href="/contactus.html">Contact us</a>
+            </li>
+            <li class="navbar-right__list--item">
+              <a href="/appointment.html">Book appointment</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav
+        class="navbar navbar-dark"
+        style="position: relative; background-color: #57cecece"
+      >
+        <h2 class="navbar-left__logo">
+          <a href="/index.html">Appointment +</a>
+        </h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="position: absolute; right: 3rem"
+        >
+          <img
+            src="../assets/hamburger.png"
+            alt="menu-icon"
+            style="width: 3rem"
+          />
+        </button>
+      </nav>
+    </div>
     <section class="appointment-top">
       <h1 class="appointment-top__name">Name: <span>John Doe</span></h1>
       <h1 class="appointment-top__date">Date: <span>21-02-2021</span></h1>
