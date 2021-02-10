@@ -78,52 +78,18 @@
                 </button>
               </div>
             </li>
-            <li class="dropdown">
+            <li>
+              <!-- ! button register -->
               <button
-                class="btn btn-secondary dropdown-toggle"
                 type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+                data-toggle="modal"
+                data-target="#addDoctor"
+                style="color: #fff"
               >
-                Register doctor
+                Register
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <!-- ! button addDoctor -->
-                <button
-                  type="button"
-                  class="btn btn-primary dropdown-item"
-                  data-toggle="modal"
-                  data-target="#addDoctor"
-                >
-                  Add doctor to program
-                </button>
-              </div>
             </li>
-            <li class="dropdown">
-              <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Register nurse
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <!-- ! button addNurse -->
-                <button
-                  type="button"
-                  class="btn btn-primary dropdown-item"
-                  data-toggle="modal"
-                  data-target="#addNurse"
-                >
-                  Add nurse to program
-                </button>
-              </div>
-            </li>
+
             <li class="dashboard-navbar__right">
               <a href="/index.html" style="color: #fff">Logout</a>
             </li>
@@ -134,7 +100,9 @@
         class="navbar navbar-dark"
         style="position: relative; background-color: #57cecece; height: 10vh"
       >
-        <h2 class="navbar-left__logo"><a href="/index.html">Appointment +</a></h2>
+        <h2 class="navbar-left__logo">
+          <a href="/index.html">Appointment +</a>
+        </h2>
         <button
           class="navbar-toggler"
           type="button"
@@ -206,23 +174,23 @@
               <div class="columns">
                 <h1>Send</h1>
                 <button
-            type="button"
-            class="btn btn-primary dropdown-item"
-            data-toggle="modal"
-            data-target="#sendInvoice"
-            style="background-color: #57cecece; text-align: center"
-          >
-            Send
-          </button>
-          <button
-            type="button"
-            class="btn btn-primary dropdown-item"
-            data-toggle="modal"
-            data-target="#sendInvoice"
-            style="background-color: #57cecece; text-align: center"
-          >
-            Send
-          </button>
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#sendInvoice"
+                  style="background-color: #57cecece; text-align: center"
+                >
+                  Send
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#sendInvoice"
+                  style="background-color: #57cecece; text-align: center"
+                >
+                  Send
+                </button>
               </div>
             </div>
           </div>
@@ -287,24 +255,24 @@
               </div>
               <div class="columns">
                 <h1>Send</h1>
-               <button
-            type="button"
-            class="btn btn-primary dropdown-item"
-            data-toggle="modal"
-            data-target="#sendInvoice"
-            style="background-color: #57cecece; text-align: center"
-          >
-            Send
-          </button>
-          <button
-            type="button"
-            class="btn btn-primary dropdown-item"
-            data-toggle="modal"
-            data-target="#sendInvoice"
-            style="background-color: #57cecece; text-align: center"
-          >
-            Send
-          </button>
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#sendInvoice"
+                  style="background-color: #57cecece; text-align: center"
+                >
+                  Send
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-item"
+                  data-toggle="modal"
+                  data-target="#sendInvoice"
+                  style="background-color: #57cecece; text-align: center"
+                >
+                  Send
+                </button>
               </div>
             </div>
           </div>
@@ -348,80 +316,35 @@
               align-items: flex-start;
             "
           >
-            <h1>Add a Doctor</h1>
+            <h1>Register</h1>
             <hr />
-            <label for="medName"
+            <div
+              style="display: flex; justify-content: space-evenly; width: 100%"
+            >
+              <label for="doc" style="font-size: 1.6rem"
+                ><input type="radio" name="reg" style="height: 1.5rem" />
+                Doctor</label
+              >
+              <label for="nurse" style="font-size: 1.6rem"
+                ><input type="radio" name="reg" style="height: 1.5rem" />
+                Nurse</label
+              >
+            </div>
+
+            <label for="medName" style="width: 100%"
               >Doctor Name: <input type="text" name="medName"
             /></label>
-            <label for="medName"
+            <label for="medName" style="width: 100%"
               >Doctor email: <input type="email" name="medName"
             /></label>
-            <label for="medName"
+            <label for="medName" style="width: 100%"
               >Doctor age: <input type="number" name="medName"
             /></label>
-            <label for="medName"
+            <label for="medName" style="width: 100%"
               >Doctor address: <input type="text" name="medName"
             /></label>
-            <label for="medName"
+            <label for="medName" style="width: 100%"
               >Upload doctor documents: <input type="file" name="medName"
-            /></label>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="my-btn-small" data-dismiss="modal">
-              Close
-            </button>
-            <hr />
-            <button type="button" class="my-btn-small">Submit</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ! Modal addNurse-->
-    <div
-      class="modal fade"
-      id="addNurse"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">addNurse</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div
-            class="modal-body letter"
-            style="
-              display: flex;
-              flex-direction: column;
-              align-items: flex-start;
-            "
-          >
-            <h1>Add a Nurse</h1>
-            <hr />
-            <label for="medName"
-              >Nurse Name: <input type="text" name="medName"
-            /></label>
-            <label for="medName"
-              >Nurse email: <input type="email" name="medName"
-            /></label>
-            <label for="medName"
-              >Nurse age: <input type="number" name="medName"
-            /></label>
-            <label for="medName"
-              >Nurse address: <input type="text" name="medName"
-            /></label>
-            <label for="medName"
-              >Upload nurse documents: <input type="file" name="medName"
             /></label>
           </div>
           <div class="modal-footer">
